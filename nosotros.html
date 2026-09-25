@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/layout.js" defer></script>
+  <script src="js/equipo.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body data-page="nosotros">
@@ -29,48 +30,8 @@
         <h2 id="t-equipo">Nuestro equipo</h2>
         <p class="bajada">Pasá el cursor (o tocá "Ver motivación") para conocer por qué cada integrante eligió este proyecto.</p>
 
-        <!-- Reemplazá nombres, iniciales, roles y textos por los del equipo real -->
-        <div class="equipo">
-          <article class="perfil" tabindex="0">
-            <div class="avatar" aria-hidden="true">I1</div>
-            <h3>Integrante 1</h3>
-            <p class="rol">Product Owner</p>
-            <p class="desc">Define las prioridades del Product Backlog y representa las necesidades de quienes usan el portal.</p>
-            <p class="motivacion" id="mot-1">Quiere que el contenido sea claro y útil para cualquier estudiante que empiece con calidad de software.</p>
-            <button class="perfil-btn" aria-expanded="false" aria-controls="mot-1">Ver motivación</button>
-            <span class="linea" aria-hidden="true"></span>
-          </article>
-
-          <article class="perfil" tabindex="0">
-            <div class="avatar" aria-hidden="true">I2</div>
-            <h3>Integrante 2</h3>
-            <p class="rol">Scrum Master</p>
-            <p class="desc">Facilita las ceremonias, cuida el proceso y ayuda a remover los impedimentos del equipo.</p>
-            <p class="motivacion" id="mot-2">Le interesa aplicar Scrum en un proyecto real y no solo estudiarlo en teoría.</p>
-            <button class="perfil-btn" aria-expanded="false" aria-controls="mot-2">Ver motivación</button>
-            <span class="linea" aria-hidden="true"></span>
-          </article>
-
-          <article class="perfil" tabindex="0">
-            <div class="avatar" aria-hidden="true">I3</div>
-            <h3>Integrante 3</h3>
-            <p class="rol">Desarrollo</p>
-            <p class="desc">Maqueta las páginas en HTML y CSS y se ocupa del diseño responsive y la accesibilidad.</p>
-            <p class="motivacion" id="mot-3">Busca mejorar sus habilidades de frontend construyendo un sitio completo.</p>
-            <button class="perfil-btn" aria-expanded="false" aria-controls="mot-3">Ver motivación</button>
-            <span class="linea" aria-hidden="true"></span>
-          </article>
-
-          <article class="perfil" tabindex="0">
-            <div class="avatar" aria-hidden="true">I4</div>
-            <h3>Integrante 4</h3>
-            <p class="rol">Desarrollo</p>
-            <p class="desc">Programa los componentes interactivos en JavaScript: menú, pestañas, acordeón y formularios.</p>
-            <p class="motivacion" id="mot-4">Le gusta que el contenido educativo sea interactivo y fácil de recorrer.</p>
-            <button class="perfil-btn" aria-expanded="false" aria-controls="mot-4">Ver motivación</button>
-            <span class="linea" aria-hidden="true"></span>
-          </article>
-        </div>
+        <!-- Los perfiles los genera js/equipo.js -->
+        <div class="equipo" data-equipo></div>
       </div>
     </section>
 
