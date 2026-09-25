@@ -4,6 +4,7 @@
    - Acordeón ............ US-13 (FAQ)
    - Tabla de contenidos . US-08 (Metodologías Ágiles)
    - Perfiles ............ US-16 (efecto hover)
+   - Formulario .......... Contacto (validación)
    Cada función revisa si su componente existe en la página.
    ========================================================= */
 
@@ -135,7 +136,53 @@ function iniciarPerfiles() {
   });
 }
 
+/* ---------- Formulario de contacto: validación ---------- */
+function iniciarContacto() {
+  const form = document.getElementById("form-contacto");
+  if (!form) return;
+  const ok = document.getElementById("form-ok");
+  const mensaje = form.querySelector("#c-mensaje");
+  const contador = document.getElementById("c-contador");
+
+  const reglas = {
+    nombre: (v) => (v.trim().length < 2 ? "Ingresá tu nombre (mínimo 2 caracteres)." : ""),
+    email: (v) => (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "Ingresá un email válido." : ""),
+    motivo: (v) => (!v ? "Elegí un motivo." : ""),
+    mensaje: (v) => (v.trim().length < 10 ? "El mensaje debe tener al menos 10 caracteres." : ""),
+  };
+
+  function validar(campo) {
+    const error = reglas[campo.name](campo.value);
+    campo.setAttribute("aria-invalid", error ? "true" : "false");
+    document.getElementById("e-" + campo.name).textContent = error;
+    return !error;
+  }
+
+  const campos = [...form.elements].filter((el) => reglas[el.name]);
+  campos.forEach((campo) => {
+    campo.addEventListener("blur", () => validar(campo));
+    campo.addEventListener("input", () => campo.getAttribute("aria-invalid") === "true" && validar(campo));
+  });
+
+  mensaje.addEventListener("input", () => (contador.textContent = `${mensaje.value.length} / 500`));
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const validos = campos.map(validar);
+    const primero = campos[validos.indexOf(false)];
+    if (primero) { primero.focus(); ok.hidden = true; return; }
+
+    const nombre = form.nombre.value.trim();
+    form.reset();
+    contador.textContent = "0 / 500";
+    campos.forEach((c) => c.removeAttribute("aria-invalid"));
+    ok.textContent = `¡Gracias, ${nombre}! Recibimos tu mensaje y te vamos a responder pronto.`;
+    ok.hidden = false;
+  });
+}
+
 iniciarPestanas();
 iniciarAcordeon();
 iniciarIndice();
 iniciarPerfiles();
+iniciarContacto();

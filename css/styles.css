@@ -334,6 +334,23 @@ td { color: var(--texto-suave); }
 @media (hover: hover) { .perfil-btn { display: none; } }
 .institucion { margin-top: 18px; color: var(--texto-suave); }
 
+/* ---------- Contacto (formulario) ---------- */
+.formulario { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); max-width: 820px; }
+.campo { display: grid; gap: 8px; }
+.campo-ancho { grid-column: 1 / -1; }
+.campo label { font-weight: 600; color: #fff; }
+.campo input, .campo select, .campo textarea {
+  width: 100%; padding: 12px 14px; border-radius: var(--radio-chico); border: 1px solid var(--borde);
+  background: var(--superficie-2); color: var(--texto); font: inherit;
+}
+.campo textarea { resize: vertical; }
+.campo input:focus, .campo select:focus, .campo textarea:focus { outline: 2px solid var(--violeta); outline-offset: 1px; }
+.campo [aria-invalid="true"] { border-color: var(--error); }
+.formulario .campo-error { margin: 0; min-height: 1.2em; font-size: .88rem; color: var(--error); }
+.campo-pie { display: flex; justify-content: space-between; gap: 12px; }
+.contador { font-size: .85rem; color: var(--texto-suave); white-space: nowrap; }
+.formulario .form-ok { margin: 0; padding: 14px 18px; border-radius: var(--radio-chico); border: 1px solid rgba(61, 214, 140, .35); background: rgba(61, 214, 140, .06); color: var(--ok); }
+
 /* ---------- Botón ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · SCrumáticos</title>
+  <meta name="description" content="Envianos tus consultas, sugerencias o feedback sobre el portal SCrumáticos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="contacto">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Contacto</nav>
+        <span class="etiqueta">Escribinos</span>
+        <h1><span class="degradado">Contacto</span></h1>
+        <p class="bajada">¿Tenés una duda, una sugerencia o encontraste un error? Completá el formulario y te respondemos a la brevedad.</p>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-form">
+      <div class="contenedor">
+        <h2 id="t-form" class="sr-only">Formulario de contacto</h2>
+        <form class="formulario tarjeta" id="form-contacto" novalidate>
+          <div class="campo">
+            <label for="c-nombre">Nombre</label>
+            <input id="c-nombre" name="nombre" type="text" autocomplete="name" required minlength="2" aria-describedby="e-nombre">
+            <p class="campo-error" id="e-nombre" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <p class="campo-error" id="e-email" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="c-motivo">Motivo</label>
+            <select id="c-motivo" name="motivo" required aria-describedby="e-motivo">
+              <option value="">Elegí una opción</option>
+              <option value="consulta">Consulta</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="error">Reportar un error</option>
+              <option value="otro">Otro</option>
+            </select>
+            <p class="campo-error" id="e-motivo" aria-live="polite"></p>
+          </div>
+
+          <div class="campo campo-ancho">
+            <label for="c-mensaje">Mensaje</label>
+            <textarea id="c-mensaje" name="mensaje" rows="6" required minlength="10" maxlength="500" aria-describedby="e-mensaje c-contador"></textarea>
+            <div class="campo-pie">
+              <p class="campo-error" id="e-mensaje" aria-live="polite"></p>
+              <span class="contador" id="c-contador">0 / 500</span>
+            </div>
+          </div>
+
+          <div class="campo-ancho">
+            <button class="btn" type="submit">Enviar mensaje</button>
+          </div>
+          <p class="form-ok campo-ancho" id="form-ok" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
