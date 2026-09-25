@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metodologías Ágiles · SCrumáticos</title>
+  <meta name="description" content="Scrum, Kanban y XP: principios, roles, ceremonias y artefactos. Manifiesto Ágil y comparación con modelos tradicionales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="agiles">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Procesos de Desarrollo / Metodologías Ágiles</nav>
+        <span class="etiqueta">Procesos de desarrollo</span>
+        <h1>Metodologías <span class="degradado">ágiles</span></h1>
+        <p class="bajada">Scrum, Kanban y XP comparten una idea: entregar valor en ciclos cortos, recibir feedback temprano y adaptarse al cambio.</p>
+      </div>
+    </section>
+
+    <div class="contenedor layout-toc">
+      <nav class="toc" data-toc aria-label="Contenido de la página">
+        <p>En esta página</p>
+        <ol>
+          <li><a href="#manifiesto">Manifiesto Ágil</a></li>
+          <li><a href="#scrum">Scrum</a>
+            <ol>
+              <li><a href="#scrum-principios">Principios</a></li>
+              <li><a href="#scrum-roles">Roles</a></li>
+              <li><a href="#scrum-eventos">Ceremonias</a></li>
+              <li><a href="#scrum-artefactos">Artefactos</a></li>
+            </ol>
+          </li>
+          <li><a href="#kanban">Kanban</a>
+            <ol>
+              <li><a href="#kanban-principios">Principios</a></li>
+              <li><a href="#kanban-practicas">Prácticas</a></li>
+              <li><a href="#kanban-artefactos">Artefactos</a></li>
+            </ol>
+          </li>
+          <li><a href="#xp">XP</a>
+            <ol>
+              <li><a href="#xp-valores">Valores</a></li>
+              <li><a href="#xp-roles">Roles</a></li>
+              <li><a href="#xp-practicas">Prácticas</a></li>
+            </ol>
+          </li>
+          <li><a href="#comparativa">Ágil vs. tradicional</a></li>
+        </ol>
+      </nav>
+
+      <div>
+        <!-- ===== MANIFIESTO ===== -->
+        <section id="manifiesto" class="metodo" style="padding-top:0" aria-labelledby="t-manifiesto">
+          <h2 id="t-manifiesto">El Manifiesto Ágil</h2>
+          <p class="suave">Firmado en 2001 por 17 desarrolladores. Propone 4 valores: se valoran los elementos de la derecha, pero se valoran más los de la izquierda.</p>
+          <ul class="valores">
+            <li><span class="mas">Individuos e interacciones</span><span class="sobre">sobre</span><span class="menos">procesos y herramientas</span></li>
+            <li><span class="mas">Software funcionando</span><span class="sobre">sobre</span><span class="menos">documentación extensiva</span></li>
+            <li><span class="mas">Colaboración con el cliente</span><span class="sobre">sobre</span><span class="menos">negociación contractual</span></li>
+            <li><span class="mas">Respuesta ante el cambio</span><span class="sobre">sobre</span><span class="menos">seguir un plan</span></li>
+          </ul>
+          <h3>Los 12 principios</h3>
+          <ol class="principios">
+            <li>La prioridad es satisfacer al cliente con entregas tempranas y continuas de software valioso.</li>
+            <li>Los cambios en los requisitos son bienvenidos, incluso en etapas tardías.</li>
+            <li>Entregar software funcionando con frecuencia, de semanas a meses, prefiriendo el plazo más corto.</li>
+            <li>Negocio y desarrolladores trabajan juntos a diario durante todo el proyecto.</li>
+            <li>Construir proyectos con personas motivadas, dándoles el entorno, el apoyo y la confianza que necesitan.</li>
+            <li>La conversación cara a cara es la forma más eficiente de comunicar información.</li>
+            <li>El software funcionando es la medida principal de progreso.</li>
+            <li>Los procesos ágiles promueven un ritmo de desarrollo sostenible e indefinido.</li>
+            <li>La atención continua a la excelencia técnica y al buen diseño mejora la agilidad.</li>
+            <li>La simplicidad, el arte de maximizar el trabajo no realizado, es esencial.</li>
+            <li>Las mejores arquitecturas, requisitos y diseños surgen de equipos autoorganizados.</li>
+            <li>A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo y ajusta su conducta.</li>
+          </ol>
+        </section>
+
+        <!-- ===== SCRUM ===== -->
+        <section id="scrum" class="metodo" aria-labelledby="t-scrum">
+          <header>
+            <span class="etiqueta">Marco de trabajo</span>
+            <h2 id="t-scrum">Scrum</h2>
+            <p class="suave">Marco liviano para resolver problemas complejos mediante iteraciones de duración fija llamadas Sprints, de un mes o menos.</p>
+          </header>
+
+          <h3 id="scrum-principios">Principios</h3>
+          <p class="suave">Se basa en el empirismo: el conocimiento viene de la experiencia. Sus tres pilares son:</p>
+          <ul class="chips"><li>Transparencia</li><li>Inspección</li><li>Adaptación</li></ul>
+          <p class="suave" style="margin-top:14px">Y sus cinco valores:</p>
+          <ul class="chips"><li>Compromiso</li><li>Foco</li><li>Apertura</li><li>Respeto</li><li>Coraje</li></ul>
+
+          <h3 id="scrum-roles">Roles (responsabilidades)</h3>
+          <div class="fichas">
+            <div class="ficha"><h4>Product Owner</h4><p>Maximiza el valor del producto. Gestiona y ordena el Product Backlog y define el objetivo del producto.</p></div>
+            <div class="ficha"><h4>Scrum Master</h4><p>Facilita el uso de Scrum, elimina impedimentos y ayuda al equipo a mejorar. Es un líder que sirve.</p></div>
+            <div class="ficha"><h4>Developers</h4><p>Construyen el incremento en cada Sprint. Se autoorganizan y se comprometen con la calidad.</p></div>
+          </div>
+
+          <h3 id="scrum-eventos">Ceremonias (eventos)</h3>
+          <p class="suave">Duraciones máximas para un Sprint de un mes; en Sprints más cortos suelen ser menores.</p>
+          <div class="fichas">
+            <div class="ficha"><h4>Sprint</h4><p>Contenedor de todos los eventos. Ciclo donde se crea un incremento utilizable.</p><span class="dato">1 a 4 semanas</span></div>
+            <div class="ficha"><h4>Sprint Planning</h4><p>Se define qué se hará en el Sprint, por qué es valioso y cómo se hará.</p><span class="dato">Hasta 8 h</span></div>
+            <div class="ficha"><h4>Daily Scrum</h4><p>Los Developers revisan el avance hacia el objetivo del Sprint y ajustan el plan del día.</p><span class="dato">15 min</span></div>
+            <div class="ficha"><h4>Sprint Review</h4><p>Se muestra el incremento a los interesados y se recibe feedback para adaptar el backlog.</p><span class="dato">Hasta 4 h</span></div>
+            <div class="ficha"><h4>Sprint Retrospective</h4><p>El equipo analiza cómo trabajó y acuerda mejoras para el próximo Sprint.</p><span class="dato">Hasta 3 h</span></div>
+          </div>
+
+          <h3 id="scrum-artefactos">Artefactos</h3>
+          <div class="fichas">
+            <div class="ficha"><h4>Product Backlog</h4><p>Lista ordenada de todo lo que el producto necesita.</p><span class="dato">Compromiso: Objetivo del Producto</span></div>
+            <div class="ficha"><h4>Sprint Backlog</h4><p>Elementos elegidos para el Sprint más el plan para entregarlos.</p><span class="dato">Compromiso: Objetivo del Sprint</span></div>
+            <div class="ficha"><h4>Incremento</h4><p>Resultado utilizable y verificado que suma valor al producto.</p><span class="dato">Compromiso: Definition of Done</span></div>
+          </div>
+        </section>
+
+        <!-- ===== KANBAN ===== -->
+        <section id="kanban" class="metodo" aria-labelledby="t-kanban">
+          <header>
+            <span class="etiqueta">Método de gestión del flujo</span>
+            <h2 id="t-kanban">Kanban</h2>
+            <p class="suave">Nació en la producción de Toyota. Visualiza el trabajo en un tablero y limita cuántas tareas hay en curso para lograr un flujo continuo, sin iteraciones fijas.</p>
+          </header>
+
+          <div class="mini-kanban" role="img" aria-label="Ejemplo de tablero Kanban con tres columnas: Por hacer con tres tarjetas, En proceso con dos tarjetas y límite 2, Hecho con una tarjeta.">
+            <div class="mk-col"><h4>Por hacer <span>3</span></h4><div class="mk-card">Diseñar formulario</div><div class="mk-card">Escribir FAQ</div><div class="mk-card">Glosario A–M</div></div>
+            <div class="mk-col"><h4>En proceso <span>2 / 2</span></h4><div class="mk-card">Menú responsive</div><div class="mk-card">Pestañas ISO</div></div>
+            <div class="mk-col"><h4>Hecho <span>1</span></h4><div class="mk-card">Página de inicio</div></div>
+          </div>
+          <p class="nota">La columna "En proceso" está llena (2 de 2): nadie empieza una tarea nueva hasta terminar una. Ese es el límite WIP.</p>
+
+          <h3 id="kanban-principios">Principios</h3>
+          <div class="fichas">
+            <div class="ficha"><h4>Empezar con lo que hacés ahora</h4><p>No exige cambiar roles ni procesos existentes.</p></div>
+            <div class="ficha"><h4>Cambio evolutivo</h4><p>Mejoras pequeñas e incrementales, acordadas por el equipo.</p></div>
+            <div class="ficha"><h4>Respetar roles actuales</h4><p>Kanban no prescribe roles; se suman responsabilidades si hacen falta.</p></div>
+            <div class="ficha"><h4>Liderazgo en todos los niveles</h4><p>Cualquier integrante puede proponer mejoras.</p></div>
+          </div>
+
+          <h3 id="kanban-practicas">Prácticas</h3>
+          <ul class="chips"><li>Visualizar el flujo</li><li>Limitar el WIP</li><li>Gestionar el flujo</li><li>Políticas explícitas</li><li>Ciclos de feedback</li><li>Mejorar colaborativamente</li></ul>
+          <p class="suave" style="margin-top:14px">En lugar de ceremonias fijas usa cadencias opcionales, como la reunión diaria frente al tablero o la reunión de reposición para elegir el próximo trabajo.</p>
+
+          <h3 id="kanban-artefactos">Artefactos y métricas</h3>
+          <div class="fichas">
+            <div class="ficha"><h4>Tablero Kanban</h4><p>Columnas que representan cada estado del trabajo.</p></div>
+            <div class="ficha"><h4>Tarjetas</h4><p>Cada una es una unidad de trabajo que avanza por el tablero.</p></div>
+            <div class="ficha"><h4>Lead time y cycle time</h4><p>Tiempo desde que se pide una tarea hasta que se entrega, y desde que se empieza hasta que se termina.</p></div>
+            <div class="ficha"><h4>Diagrama de flujo acumulado</h4><p>Muestra cuántas tareas hay en cada estado a lo largo del tiempo.</p></div>
+          </div>
+        </section>
+
+        <!-- ===== XP ===== -->
+        <section id="xp" class="metodo" aria-labelledby="t-xp">
+          <header>
+            <span class="etiqueta">Metodología de ingeniería</span>
+            <h2 id="t-xp">Extreme Programming (XP)</h2>
+            <p class="suave">Creada por Kent Beck a fines de los 90. Lleva al extremo las buenas prácticas técnicas para lograr código de alta calidad con requisitos que cambian seguido.</p>
+          </header>
+
+          <h3 id="xp-valores">Valores</h3>
+          <ul class="chips"><li>Comunicación</li><li>Simplicidad</li><li>Retroalimentación</li><li>Coraje</li><li>Respeto</li></ul>
+
+          <h3 id="xp-roles">Roles</h3>
+          <div class="fichas">
+            <div class="ficha"><h4>Cliente</h4><p>Escribe las historias de usuario y las pruebas de aceptación; define prioridades.</p></div>
+            <div class="ficha"><h4>Programador</h4><p>Estima, diseña, programa y prueba, normalmente en parejas.</p></div>
+            <div class="ficha"><h4>Tester</h4><p>Ayuda al cliente a escribir y ejecutar las pruebas funcionales.</p></div>
+            <div class="ficha"><h4>Coach y Tracker</h4><p>El coach guía el proceso; el tracker mide el avance y las estimaciones.</p></div>
+          </div>
+
+          <h3 id="xp-practicas">Prácticas y artefactos</h3>
+          <div class="fichas">
+            <div class="ficha"><h4>Programación en parejas</h4><p>Dos personas, una computadora: uno escribe y el otro revisa.</p></div>
+            <div class="ficha"><h4>Desarrollo guiado por pruebas</h4><p>Primero se escribe la prueba, después el código que la hace pasar.</p></div>
+            <div class="ficha"><h4>Integración continua</h4><p>El código se integra y prueba varias veces por día.</p></div>
+            <div class="ficha"><h4>Refactorización</h4><p>Mejorar el diseño del código sin cambiar su comportamiento.</p></div>
+            <div class="ficha"><h4>Entregas pequeñas</h4><p>Versiones frecuentes que el cliente puede usar.</p></div>
+            <div class="ficha"><h4>Juego de planificación</h4><p>Cliente y equipo eligen historias según valor y esfuerzo estimado.</p></div>
+          </div>
+          <p class="nota">Artefactos típicos: historias de usuario, tarjetas CRC, pruebas de aceptación y el plan de entregas e iteraciones.</p>
+        </section>
+
+        <!-- ===== COMPARATIVA ===== -->
+        <section id="comparativa" class="metodo" aria-labelledby="t-comp">
+          <h2 id="t-comp">Ágil vs. tradicional</h2>
+          <div class="tabla-wrap">
+            <table>
+              <thead><tr><th scope="col">Aspecto</th><th scope="col">Cascada</th><th scope="col">Scrum</th><th scope="col">Kanban</th><th scope="col">XP</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Enfoque</th><td>Secuencial, por fases</td><td>Iterativo e incremental</td><td>Flujo continuo</td><td>Iterativo, centrado en lo técnico</td></tr>
+                <tr><th scope="row">Iteraciones</th><td>Una sola entrega final</td><td>Sprints de 1 a 4 semanas</td><td>No tiene</td><td>1 a 2 semanas</td></tr>
+                <tr><th scope="row">Cambios</th><td>Costosos una vez aprobados</td><td>Entre Sprints</td><td>En cualquier momento</td><td>Bienvenidos siempre</td></tr>
+                <tr><th scope="row">Roles</th><td>Jefe de proyecto, analistas, etc.</td><td>PO, Scrum Master, Developers</td><td>No prescribe</td><td>Cliente, programador, coach, tracker</td></tr>
+                <tr><th scope="row">Documentación</th><td>Extensa</td><td>La necesaria</td><td>Mínima</td><td>Mínima; el código y las pruebas documentan</td></tr>
+                <tr><th scope="row">Ideal para</th><td>Requisitos estables y claros</td><td>Productos con requisitos cambiantes</td><td>Soporte y mantenimiento</td><td>Equipos chicos con alta exigencia técnica</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pros-contras">
+            <div class="pros"><h4>Ventajas de lo ágil</h4><ul><li>Feedback temprano del cliente</li><li>Se adapta a cambios</li><li>Entregas de valor frecuentes</li><li>Riesgos detectados antes</li></ul></div>
+            <div class="contras"><h4>Desventajas de lo ágil</h4><ul><li>Difícil estimar costo y plazo total</li><li>Exige compromiso constante del cliente</li><li>Menos documentación formal</li><li>Escala peor en equipos muy grandes</li></ul></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

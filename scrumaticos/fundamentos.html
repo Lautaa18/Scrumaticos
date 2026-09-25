@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fundamentos de calidad · SCrumáticos</title>
+  <meta name="description" content="Conceptos clave de calidad del software, métricas y estándares ISO 9126 e ISO/IEC 25000.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="fundamentos">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Gestión de la Calidad / Fundamentos</nav>
+        <span class="etiqueta">Gestión de la calidad del software</span>
+        <h1>Fundamentos de <span class="degradado">calidad</span></h1>
+        <p class="bajada">Qué significa que un software tenga calidad, cómo se mide y qué estándares internacionales se usan para evaluarla.</p>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-concepto">
+      <div class="contenedor prosa">
+        <h2 id="t-concepto">¿Qué es la calidad del software?</h2>
+        <div class="definicion">
+          Es el grado en que un sistema, componente o proceso cumple los requisitos especificados y las necesidades o expectativas del cliente o usuario.
+          <cite>Basado en IEEE Std 610.12</cite>
+        </div>
+        <p>La calidad no se agrega al final: se construye durante todo el ciclo de vida. Por eso se habla de calidad del <strong>producto</strong> (el software terminado) y calidad del <strong>proceso</strong> (la forma en que se lo desarrolla).</p>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-claves">
+      <div class="contenedor">
+        <h2 id="t-claves">Conceptos clave</h2>
+        <dl class="grilla-2">
+          <div class="par tarjeta"><dt>Verificación</dt><dd>¿Estamos construyendo el producto correctamente? Comprueba que el software cumpla su especificación.</dd></div>
+          <div class="par tarjeta"><dt>Validación</dt><dd>¿Estamos construyendo el producto correcto? Comprueba que satisfaga lo que el usuario realmente necesita.</dd></div>
+          <div class="par tarjeta"><dt>Aseguramiento de la calidad (QA)</dt><dd>Actividades preventivas sobre el proceso para evitar que aparezcan defectos.</dd></div>
+          <div class="par tarjeta"><dt>Control de la calidad (QC)</dt><dd>Actividades sobre el producto para detectar defectos, como las pruebas y revisiones.</dd></div>
+          <div class="par tarjeta"><dt>Error, defecto y falla</dt><dd>Una persona comete un <em>error</em>, que deja un <em>defecto</em> en el código, que al ejecutarse produce una <em>falla</em> visible.</dd></div>
+          <div class="par tarjeta"><dt>Costo de la calidad</dt><dd>Cuanto más tarde se detecta un defecto, más caro es corregirlo. Prevenir cuesta menos que reparar.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-metricas">
+      <div class="contenedor">
+        <h2 id="t-metricas">Métricas de calidad</h2>
+        <p class="bajada">Una métrica transforma una característica del software en un número que se puede comparar y seguir en el tiempo.</p>
+        <div class="tabla-wrap">
+          <table>
+            <thead><tr><th scope="col">Métrica</th><th scope="col">Qué mide</th><th scope="col">Ejemplo</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Densidad de defectos</th><td>Defectos encontrados por tamaño del software</td><td>3 defectos cada 1000 líneas de código</td></tr>
+              <tr><th scope="row">Complejidad ciclomática</th><td>Cantidad de caminos independientes en el código</td><td>Una función con valor mayor a 10 es difícil de probar</td></tr>
+              <tr><th scope="row">Cobertura de pruebas</th><td>Porcentaje del código ejecutado por las pruebas</td><td>80% de las líneas cubiertas</td></tr>
+              <tr><th scope="row">MTBF</th><td>Tiempo medio entre fallas (fiabilidad)</td><td>El sistema falla en promedio cada 200 horas</td></tr>
+              <tr><th scope="row">Tiempo de respuesta</th><td>Eficiencia de desempeño percibida por el usuario</td><td>La búsqueda responde en menos de 2 segundos</td></tr>
+              <tr><th scope="row">Satisfacción del usuario</th><td>Calidad en uso, mediante encuestas</td><td>Puntaje promedio 4,2 sobre 5</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-estandares">
+      <div class="contenedor">
+        <h2 id="t-estandares">Estándares ISO</h2>
+        <p class="bajada">Definen un modelo común para describir y evaluar la calidad del producto de software.</p>
+
+        <div data-tabs>
+          <div class="tabs-lista" role="tablist" aria-label="Estándares de calidad">
+            <button class="tab" role="tab" id="tab-9126" aria-controls="panel-9126" aria-selected="true">ISO 9126</button>
+            <button class="tab" role="tab" id="tab-25000" aria-controls="panel-25000" aria-selected="false" tabindex="-1">ISO/IEC 25000</button>
+            <button class="tab" role="tab" id="tab-comp" aria-controls="panel-comp" aria-selected="false" tabindex="-1">Diferencias</button>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-9126" aria-labelledby="tab-9126" tabindex="0">
+            <p>Publicada en 1991 y revisada en 2001, define <strong>6 características</strong> de calidad del producto. Hoy está reemplazada por la serie ISO/IEC 25000, pero sigue siendo la base para entender el tema.</p>
+            <ul class="caracteristicas">
+              <li><strong>Funcionalidad</strong><span>Hace lo que se necesita: adecuación, exactitud, interoperabilidad, seguridad.</span></li>
+              <li><strong>Fiabilidad</strong><span>Mantiene su nivel de desempeño: madurez, tolerancia a fallos, recuperabilidad.</span></li>
+              <li><strong>Usabilidad</strong><span>Es fácil de entender, aprender y operar, y resulta atractivo.</span></li>
+              <li><strong>Eficiencia</strong><span>Buen uso del tiempo de respuesta y de los recursos.</span></li>
+              <li><strong>Mantenibilidad</strong><span>Es fácil de analizar, modificar, mantener estable y probar.</span></li>
+              <li><strong>Portabilidad</strong><span>Se adapta, instala y reemplaza en otros entornos.</span></li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-25000" aria-labelledby="tab-25000" tabindex="0" hidden>
+            <p>Conocida como <strong>SQuaRE</strong>, reemplaza a ISO 9126 y a ISO 14598. Su modelo de calidad del producto (ISO/IEC 25010:2011) define <strong>8 características</strong>:</p>
+            <ul class="caracteristicas">
+              <li><strong>Adecuación funcional</strong><span>Completitud, corrección y pertinencia de las funciones.</span></li>
+              <li><strong>Eficiencia de desempeño</strong><span>Tiempo, uso de recursos y capacidad.</span></li>
+              <li><strong>Compatibilidad</strong><span>Coexistencia e interoperabilidad con otros sistemas.</span></li>
+              <li><strong>Usabilidad</strong><span>Aprendizaje, operabilidad, protección ante errores y accesibilidad.</span></li>
+              <li><strong>Fiabilidad</strong><span>Madurez, disponibilidad, tolerancia a fallos y recuperabilidad.</span></li>
+              <li><strong>Seguridad</strong><span>Confidencialidad, integridad, no repudio, autenticidad.</span></li>
+              <li><strong>Mantenibilidad</strong><span>Modularidad, reusabilidad, analizabilidad, modificabilidad, capacidad de prueba.</span></li>
+              <li><strong>Portabilidad</strong><span>Adaptabilidad, facilidad de instalación y de reemplazo.</span></li>
+            </ul>
+            <h3 style="margin-top:32px">Divisiones de la serie</h3>
+            <div class="tabla-wrap">
+              <table>
+                <thead><tr><th scope="col">División</th><th scope="col">Contenido</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">ISO/IEC 2500n</th><td>Gestión de la calidad</td></tr>
+                  <tr><th scope="row">ISO/IEC 2501n</th><td>Modelo de calidad (incluye 25010)</td></tr>
+                  <tr><th scope="row">ISO/IEC 2502n</th><td>Medición de la calidad</td></tr>
+                  <tr><th scope="row">ISO/IEC 2503n</th><td>Requisitos de calidad</td></tr>
+                  <tr><th scope="row">ISO/IEC 2504n</th><td>Evaluación de la calidad</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="nota">En la revisión ISO/IEC 25010:2023 el modelo pasó a 9 características: se agregó <em>protección</em> (safety), usabilidad se renombró como <em>capacidad de interacción</em> y portabilidad como <em>flexibilidad</em>.</p>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-comp" aria-labelledby="tab-comp" tabindex="0" hidden>
+            <div class="tabla-wrap">
+              <table>
+                <thead><tr><th scope="col">Aspecto</th><th scope="col">ISO 9126</th><th scope="col">ISO/IEC 25000</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Estado</th><td>Reemplazada</td><td>Vigente</td></tr>
+                  <tr><th scope="row">Características</th><td>6</td><td>8 (9 desde 2023)</td></tr>
+                  <tr><th scope="row">Seguridad</th><td>Subcaracterística de funcionalidad</td><td>Característica propia</td></tr>
+                  <tr><th scope="row">Compatibilidad</th><td>No existe como característica</td><td>Característica propia</td></tr>
+                  <tr><th scope="row">Alcance</th><td>Modelo y métricas</td><td>Serie completa: gestión, modelo, medición, requisitos y evaluación</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
