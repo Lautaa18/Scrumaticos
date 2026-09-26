@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/layout.js" defer></script>
+  <script src="js/equipo.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body data-page="inicio">
@@ -75,8 +76,8 @@
             <h2>Sobre Nosotros y Contacto</h2>
             <p>Conocé al equipo SCrumáticos y envianos tus consultas o feedback.</p>
             <div class="tags">
-              <a class="tag" href="nosotros.html">El equipo</a>
-              <a class="tag" href="contacto.html">Contacto</a>
+              <a class="tag" href="#nosotros">El equipo</a>
+              <a class="tag" href="#contacto">Contacto</a>
             </div>
           </article>
         </div>
@@ -98,6 +99,64 @@
           <path d="M0,220 C300,160 600,300 900,330 C1150,355 1300,200 1440,60 L1440,600 L0,600 Z" fill="url(#onda1)"/>
           <path d="M0,480 C260,300 560,260 860,330 C1100,385 1300,360 1440,280 L1440,600 L0,600 Z" fill="url(#onda2)"/>
         </svg>
+      </div>
+    </section>
+    <section class="bloque" id="nosotros" aria-labelledby="t-nosotros">
+      <div class="contenedor">
+        <span class="etiqueta">El equipo</span>
+        <h2 id="t-nosotros">Sobre <span class="degradado">nosotros</span></h2>
+        <p class="bajada">Somos SCrumáticos, un equipo de estudiantes que trabaja con Scrum para construir un portal sobre gestión de la calidad del software y metodologías de desarrollo.</p>
+        <p class="bajada">Pasá el cursor (o tocá "Ver motivación") para conocer por qué cada integrante eligió este proyecto.</p>
+
+        <!-- Los perfiles los genera js/equipo.js -->
+        <div class="equipo" data-equipo></div>
+      </div>
+    </section>
+
+    <section class="bloque" id="contacto" aria-labelledby="t-contacto">
+      <div class="contenedor">
+        <span class="etiqueta">Escribinos</span>
+        <h2 id="t-contacto"><span class="degradado">Contacto</span></h2>
+        <p class="bajada">¿Tenés una duda, una sugerencia o encontraste un error? Completá el formulario y te respondemos a la brevedad.</p>
+        <form class="formulario tarjeta" id="form-contacto" novalidate>
+          <div class="campo">
+            <label for="c-nombre">Nombre</label>
+            <input id="c-nombre" name="nombre" type="text" autocomplete="name" required minlength="2" aria-describedby="e-nombre">
+            <p class="campo-error" id="e-nombre" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+            <p class="campo-error" id="e-email" aria-live="polite"></p>
+          </div>
+
+          <div class="campo">
+            <label for="c-motivo">Motivo</label>
+            <select id="c-motivo" name="motivo" required aria-describedby="e-motivo">
+              <option value="">Elegí una opción</option>
+              <option value="consulta">Consulta</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="error">Reportar un error</option>
+              <option value="otro">Otro</option>
+            </select>
+            <p class="campo-error" id="e-motivo" aria-live="polite"></p>
+          </div>
+
+          <div class="campo campo-ancho">
+            <label for="c-mensaje">Mensaje</label>
+            <textarea id="c-mensaje" name="mensaje" rows="6" required minlength="10" maxlength="500" aria-describedby="e-mensaje c-contador"></textarea>
+            <div class="campo-pie">
+              <p class="campo-error" id="e-mensaje" aria-live="polite"></p>
+              <span class="contador" id="c-contador">0 / 500</span>
+            </div>
+          </div>
+
+          <div class="campo-ancho">
+            <button class="btn" type="submit">Enviar mensaje</button>
+          </div>
+          <p class="form-ok campo-ancho" id="form-ok" role="status" hidden></p>
+        </form>
       </div>
     </section>
   </main>
