@@ -320,6 +320,7 @@ td { color: var(--texto-suave); }
   background: linear-gradient(145deg, #8B5CF6, #6D3FD1); font-weight: 700; font-size: 1.5rem; color: #fff;
   box-shadow: 0 10px 30px rgba(123, 79, 219, 0.45);
 }
+img.avatar { display: block; object-fit: cover; }
 .perfil h3 { font-family: var(--f-texto); font-size: 1.25rem; margin-bottom: 4px; }
 .perfil .rol { font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--violeta); margin-bottom: 14px; }
 .perfil .desc { color: var(--texto-suave); font-size: .96rem; }
