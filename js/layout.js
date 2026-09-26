@@ -79,20 +79,12 @@ const NAV = [
     }).join("");
   }
 
-  // Reemplazá este SVG por el logo real: <img src="img/logo.png" alt="SCrumáticos" height="32">
-  const logo = `
-    <svg width="34" height="24" viewBox="0 0 34 24" fill="none" aria-hidden="true">
-      <ellipse cx="13" cy="12" rx="11" ry="9" stroke="#38BDF8" stroke-width="1.6"/>
-      <ellipse cx="21" cy="12" rx="11" ry="9" stroke="#7DD3FC" stroke-width="1.6"/>
-      <ellipse cx="17" cy="12" rx="6" ry="5" stroke="#38BDF8" stroke-width="1.4"/>
-    </svg>`;
-
   const header = document.createElement("header");
   header.className = "site-header";
   header.innerHTML = `
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <a class="logo" href="index.html" aria-label="SCrumáticos, ir al inicio">
-      ${logo}<span><span class="logo-sc">SC</span>rumáticos</span>
+      <img src="img/logo-scrumaticos.png" alt="" width="182" height="24">
     </a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
       <span></span>
