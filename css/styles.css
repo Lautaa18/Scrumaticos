@@ -305,6 +305,15 @@ td { color: var(--texto-suave); }
 .pros-contras ul { margin: 0; padding-left: 1.1em; color: var(--texto-suave); font-size: .95rem; }
 
 /* ---------- Sobre Nosotros (US-16) ---------- */
+.nosotros-intro { display: grid; grid-template-columns: minmax(0, 360px) 1fr; gap: 48px; align-items: center; }
+.logo-equipo {
+  display: block; width: 100%; height: auto; border-radius: var(--radio);
+  border: 1px solid var(--borde); box-shadow: 0 20px 60px rgba(123, 79, 219, 0.35);
+}
+@media (max-width: 760px) {
+  .nosotros-intro { grid-template-columns: 1fr; gap: 28px; }
+  .logo-equipo { max-width: 360px; margin-inline: auto; }
+}
 .equipo { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); margin-top: 48px; }
 .perfil {
   --x: 50%; --y: 0%;
