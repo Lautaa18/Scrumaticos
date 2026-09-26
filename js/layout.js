@@ -48,8 +48,8 @@ const NAV = [
       { label: "Encuesta", href: null, id: "encuesta" },
     ],
   },
-  { label: "Sobre Nosotros", href: "nosotros.html", id: "nosotros" },
-  { label: "Contacto", href: "contacto.html", id: "contacto" },
+  { label: "Sobre Nosotros", href: "index.html#nosotros", id: "inicio", ancla: true },
+  { label: "Contacto", href: "index.html#contacto", id: "inicio", ancla: true },
 ];
 
 (function () {
