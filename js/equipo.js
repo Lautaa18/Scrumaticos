@@ -33,7 +33,7 @@ const EQUIPO = [
     rol: "Programador / Dev",
     descripcion: "Da vida al sitio con JavaScript. Desarrolla la interactividad, la maquetación HTML/CSS y las herramientas como el comparador de metodologías.",
     motivacion: "",
-    foto: "img/lautaro.jpg",
+    foto: "img/lautaro.gif",
   },
 ];
 
