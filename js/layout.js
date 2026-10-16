@@ -19,7 +19,6 @@ const NAV = [
     hijos: [
       { label: "SDLC", href: null, id: "sdlc" },
       { label: "Modelos Tradicionales", href: null, id: "tradicionales" },
-      { label: "Metodologías Ágiles", href: "agiles.html", id: "agiles" },
     ],
   },
   {
