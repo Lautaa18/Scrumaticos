@@ -143,10 +143,42 @@ p { margin: 0 0 1em; }
 .menu-link small { font-size: .7rem; letter-spacing: .08em; color: var(--texto-suave); }
 
 /* ---------- Footer ---------- */
-.site-footer {
-  margin-top: 96px; padding: 32px 20px; text-align: center;
-  color: #6E6A8C; font-size: .95rem; border-top: 1px solid rgba(255, 255, 255, 0.05);
+.site-footer { margin-top: 96px; padding: 0 20px 40px; color: var(--texto-suave); font-size: .95rem; }
+.footer-caja {
+  max-width: var(--ancho); margin: 0 auto; padding: 48px 56px 28px;
+  background: rgba(8, 6, 28, 0.85); border: 1px solid var(--borde); border-radius: 28px;
 }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr; gap: 40px; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; }
+.site-footer h2 { font: 600 1rem var(--f-texto); color: var(--texto); margin: 0 0 22px; }
+.site-footer nav li { margin-bottom: 12px; }
+.site-footer a { color: var(--texto-suave); text-decoration: none; }
+.site-footer a:hover, .site-footer a:focus-visible { color: var(--texto); }
+.footer-marca img { display: block; max-width: 100%; height: auto; margin-bottom: 20px; }
+.footer-marca p { margin: 0 0 24px; line-height: 1.6; max-width: 32ch; }
+.footer-pildoras { display: flex; flex-wrap: wrap; gap: 8px; }
+.footer-pildoras li { padding: 6px 12px; border: 1px solid var(--borde); border-radius: 999px; font-size: .8rem; }
+.footer-circulos { display: grid; grid-template-columns: repeat(2, 78px); gap: 14px; }
+.footer-circulos li {
+  width: 78px; height: 78px; border-radius: 50%; border: 1px solid var(--borde);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
+}
+.footer-circulos strong { font: 700 1.1rem var(--f-titulo); color: var(--lila); line-height: 1.1; }
+.footer-circulos small { font-size: .68rem; }
+.footer-pie {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  margin-top: 40px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.06); font-size: .85rem;
+}
+.footer-pie p { margin: 0; }
+.footer-pie ul { display: flex; gap: 8px; }
+.footer-pie li + li::before { content: "·"; margin-right: 8px; }
+@media (max-width: 860px) {
+  .footer-caja { padding: 32px 24px 24px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-marca { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
 
 /* ---------- Inicio: hero + tarjetas (US-01) ---------- */
 .hero { position: relative; overflow: hidden; text-align: center; padding: 64px 0 120px; }

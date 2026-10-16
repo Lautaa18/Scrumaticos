@@ -96,7 +96,53 @@ const NAV = [
 
   const footer = document.createElement("footer");
   footer.className = "site-footer";
-  footer.textContent = `Gestión de Calidad de Software · SCrumáticos · ${new Date().getFullYear()}`;
+  footer.innerHTML = `
+    <div class="footer-caja">
+      <div class="footer-grid">
+        <div class="footer-marca">
+          <img src="img/logo-scrumaticos.png" alt="SCrumáticos" width="182" height="24">
+          <p>Aprendemos, colaboramos y mejoramos para entregar software de calidad.</p>
+          <ul class="footer-pildoras">
+            <li>Planificamos</li><li>Colaboramos</li><li>Adaptamos</li>
+          </ul>
+        </div>
+        <nav aria-label="Contenido">
+          <h2>Contenido</h2>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fundamentos.html">Gestión de calidad</a></li>
+            <li><a href="agiles.html">Procesos de desarrollo</a></li>
+            <li><a href="agiles.html">Metodologías ágiles</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="SCrumáticos">
+          <h2>SCrumáticos</h2>
+          <ul>
+            <li><a href="index.html#nosotros">Sobre nosotros</a></li>
+            <li><a href="index.html#nosotros">Nuestro equipo</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><span>Recursos educativos</span></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Nuestro enfoque</h2>
+          <ul class="footer-circulos">
+            <li><strong>QA</strong><small>Calidad</small></li>
+            <li><strong>S</strong><small>Scrum</small></li>
+            <li><strong>ISO</strong><small>25010</small></li>
+            <li><strong>∞</strong><small>Mejora</small></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-pie">
+        <p>© ${new Date().getFullYear()} SCrumáticos. Todos los derechos reservados.</p>
+        <ul>
+          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><span>Privacidad</span></li>
+          <li><span>Accesibilidad</span></li>
+        </ul>
+      </div>
+    </div>`;
   document.body.append(footer);
 
   // ---- Comportamiento del menú ----
