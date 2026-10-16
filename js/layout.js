@@ -36,7 +36,7 @@ const NAV = [
     label: "Recursos y Aprendizaje",
     hijos: [
       { label: "Glosario", href: null, id: "glosario" },
-      { label: "Preguntas Frecuentes", href: null, id: "faq" },
+      { label: "Preguntas Frecuentes", href: "faq.html", id: "faq" },
       { label: "Enlaces de Interés", href: null, id: "enlaces" },
       { label: "Ejercicios", href: null, id: "ejercicios" },
     ],

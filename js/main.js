@@ -94,8 +94,11 @@ function iniciarIndice() {
     entradas.forEach((entrada) => {
       if (!entrada.isIntersecting) return;
       const id = entrada.target.id;
+      // en móvil los subniveles están ocultos: se marca el ítem principal
+      let objetivo = enlaces.find((a) => a.getAttribute("href") === "#" + id);
+      if (objetivo && !objetivo.offsetParent) objetivo = objetivo.closest("[data-toc] > ol > li").querySelector(":scope > a");
       enlaces.forEach((a) => {
-        const activo = a.getAttribute("href") === "#" + id;
+        const activo = a === objetivo;
         a.classList.toggle("es-activo", activo);
         if (activo) {
           a.setAttribute("aria-current", "location");

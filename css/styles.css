@@ -369,7 +369,7 @@ img.avatar { display: block; object-fit: cover; }
   margin-top: 4px; font-size: .92rem; color: var(--lila);
   max-height: 0; opacity: 0; overflow: hidden; transition: max-height .35s ease, opacity .35s ease;
 }
-.perfil:hover .motivacion, .perfil:focus-within .motivacion, .perfil.abierto .motivacion { max-height: 200px; opacity: 1; }
+.perfil:hover .motivacion, .perfil:focus-visible .motivacion, .perfil:has(:focus-visible) .motivacion, .perfil.abierto .motivacion { max-height: 200px; opacity: 1; }
 .perfil .linea { display: block; width: 54px; height: 3px; margin: 18px auto 0; background: var(--violeta); border-radius: 2px; transition: width .3s; }
 .perfil:hover .linea { width: 90px; }
 .perfil-btn { margin-top: 10px; background: none; border: 0; color: var(--texto-suave); font: inherit; font-size: .85rem; text-decoration: underline; cursor: pointer; }
@@ -403,7 +403,7 @@ img.avatar { display: block; object-fit: cover; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .layout-toc { grid-template-columns: 1fr; gap: 0; }
+  .layout-toc { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .toc {
     top: var(--header-h); z-index: 20; margin: 0 -20px; padding: 10px 20px;
     background: rgba(7, 5, 26, 0.92); backdrop-filter: blur(8px);
