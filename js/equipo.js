@@ -56,6 +56,7 @@ const EQUIPO = [
       ${avatar(p)}
       <h3>${p.nombre}</h3>
       <p class="rol">${p.rol}</p>
+      ${p.institucion ? `<p class="inst">${p.institucion}</p>` : ""}
       <p class="desc">${p.descripcion}</p>
       ${motivacion(p, i)}
       <span class="linea" aria-hidden="true"></span>
