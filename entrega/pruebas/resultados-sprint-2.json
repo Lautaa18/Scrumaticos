@@ -1,0 +1,947 @@
+[
+ {
+  "id": "US3-1",
+  "desc": "que cargue la página Técnicas de QA",
+  "esperado": "Se ve el título, los niveles y los tipos de prueba",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-2",
+  "desc": "el esquema de niveles de prueba",
+  "esperado": "Se ven Unitarias, Integración y Sistema diferenciadas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-3",
+  "desc": "el cuadro de tipos de prueba",
+  "esperado": "Se ven Caja Negra y Caja Blanca en el cuadro comparativo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-4",
+  "desc": "abrir una tarjeta con el mouse",
+  "esperado": "La tarjeta gira o se abre el modal con los detalles",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-5",
+  "desc": "cerrar la tarjeta",
+  "esperado": "La tarjeta vuelve a su estado inicial",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-6",
+  "desc": "cerrar el modal con la tecla Esc",
+  "esperado": "El modal se cierra",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-7",
+  "desc": "todas las tarjetas",
+  "esperado": "Cada una muestra sus propios detalles",
+  "ok": true,
+  "nota": "7 tarjetas, cada una con su detalle"
+ },
+ {
+  "id": "US3-8",
+  "desc": "abrir una tarjeta con el dedo",
+  "esperado": "Se abre con un solo toque, igual que con el mouse",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-9",
+  "desc": "las tarjetas con teclado",
+  "esperado": "La tarjeta se abre y el foco se ve resaltado",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US3-10",
+  "desc": "la página en celular",
+  "esperado": "Las tarjetas se apilan y no hay desplazamiento horizontal",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-1",
+  "desc": "que cargue la página Herramientas",
+  "esperado": "Se ve la grilla de tarjetas y los botones de filtro",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-2",
+  "desc": "las tarjetas de la grilla",
+  "esperado": "Cada una tiene su ícono, nombre y descripción",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-3",
+  "desc": "el filtro que se ve al cargar",
+  "esperado": "Está activo “Todas” y se ven todas las tarjetas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-4",
+  "desc": "el filtro Bug Trackers",
+  "esperado": "Solo se ven las herramientas de seguimiento de defectos",
+  "ok": true,
+  "nota": "3 tarjetas"
+ },
+ {
+  "id": "US4-5",
+  "desc": "el filtro Linters",
+  "esperado": "Solo se ven los linters",
+  "ok": true,
+  "nota": "3 tarjetas"
+ },
+ {
+  "id": "US4-6",
+  "desc": "el filtro Test Management",
+  "esperado": "Solo se ven las herramientas de gestión de pruebas",
+  "ok": true,
+  "nota": "3 tarjetas"
+ },
+ {
+  "id": "US4-7",
+  "desc": "volver a ver todas",
+  "esperado": "Vuelven a aparecer todas las tarjetas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-8",
+  "desc": "el botón activo",
+  "esperado": "Solo el botón elegido queda resaltado",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-9",
+  "desc": "que no se recargue la página",
+  "esperado": "La página no se recarga y el cambio es inmediato",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-10",
+  "desc": "que no haya errores",
+  "esperado": "No aparecen errores en la consola",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US4-11",
+  "desc": "la grilla en celular",
+  "esperado": "La grilla pasa a una columna y los botones entran en la pantalla",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-1",
+  "desc": "que cargue la página SDLC",
+  "esperado": "Se ve el título y la línea de tiempo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-2",
+  "desc": "el orden de las etapas",
+  "esperado": "Hay 6 etapas en orden: Requisitos, Diseño, Desarrollo, Pruebas, Despliegue y Mantenimiento",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-3",
+  "desc": "la iluminación de las etapas",
+  "esperado": "Cada etapa se ilumina al llegar a ella",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-4",
+  "desc": "el click en una etapa",
+  "esperado": "Se resalta Pruebas y se muestra su explicación",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-5",
+  "desc": "el desplazamiento suave",
+  "esperado": "La página baja de forma suave hasta esa etapa",
+  "ok": true,
+  "nota": "Desplazamiento en 6 muestras, gradual"
+ },
+ {
+  "id": "US5-6",
+  "desc": "el contenido de cada etapa",
+  "esperado": "Todas explican qué se hace y por qué es importante",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-7",
+  "desc": "la línea de tiempo en escritorio",
+  "esperado": "Se ve completa y no hay desplazamiento horizontal",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-8",
+  "desc": "la línea de tiempo en tablet",
+  "esperado": "Se adapta y no hay desplazamiento horizontal",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US5-9",
+  "desc": "la línea de tiempo en celular",
+  "esperado": "Pasa a vertical y no se sale de la pantalla",
+  "ok": true,
+  "nota": "Vertical, sin desbordar"
+ },
+ {
+  "id": "US6-1",
+  "desc": "que cargue la página Modelos Tradicionales",
+  "esperado": "Se ve el título, el menú interno y los 3 modelos",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-2",
+  "desc": "el contenido de Cascada",
+  "esperado": "Tiene descripción, ventajas, desventajas y cuándo usarlo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-3",
+  "desc": "el contenido del Modelo en V",
+  "esperado": "Tiene descripción, ventajas, desventajas y cuándo usarlo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-4",
+  "desc": "el contenido de Iterativo e Incremental",
+  "esperado": "Tiene descripción, ventajas, desventajas y cuándo usarlo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-5",
+  "desc": "las cajas de colores",
+  "esperado": "Ventajas en caja verde y desventajas en caja roja, con íconos",
+  "ok": true,
+  "nota": "Ventajas rgb(243, 240, 255), desventajas rgb(243, 240, 255), con íconos ✓/✕"
+ },
+ {
+  "id": "US6-6",
+  "desc": "el link Cascada del menú interno",
+  "esperado": "La página baja a Cascada y el título no queda tapado por el header",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-7",
+  "desc": "el link Modelo en V del menú interno",
+  "esperado": "La página baja al Modelo en V",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-8",
+  "desc": "el link Iterativo del menú interno",
+  "esperado": "La página baja a Iterativo e Incremental",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-9",
+  "desc": "entrar directo a un modelo",
+  "esperado": "La página carga ubicada en el Modelo en V",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US6-10",
+  "desc": "la página en celular",
+  "esperado": "Las cajas se apilan y no hay desplazamiento horizontal",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US7-1",
+  "desc": "que estén las ilustraciones",
+  "esperado": "Hay un diagrama de Cascada, uno del Modelo en V y uno de Iterativo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US7-2",
+  "desc": "el formato de las imágenes",
+  "esperado": "Todas están en SVG o WebP",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US7-3",
+  "desc": "el atributo alt",
+  "esperado": "Todas tienen un texto alt que describe el diagrama",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US7-4",
+  "desc": "el pie de foto",
+  "esperado": "Cada una tiene su pie de foto explicativo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US7-5",
+  "desc": "el tiempo de carga",
+  "esperado": "Las imágenes cargan rápido, en menos de 2 segundos",
+  "ok": true,
+  "nota": "57 ms; SVG de 2.1, 3.5, 4.7 KB"
+ },
+ {
+  "id": "US7-6",
+  "desc": "abrir el Lightbox",
+  "esperado": "La imagen se abre en pantalla completa",
+  "ok": true,
+  "nota": "Imagen ampliada de 531 a 1200 px"
+ },
+ {
+  "id": "US7-7",
+  "desc": "cerrar el Lightbox con la X",
+  "esperado": "El Lightbox se cierra",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US7-8",
+  "desc": "cerrar el Lightbox con Esc o click afuera",
+  "esperado": "El Lightbox se cierra",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US7-9",
+  "desc": "las imágenes en celular",
+  "esperado": "Las imágenes se achican sin deformarse ni cortarse",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-1",
+  "desc": "el esquema del ciclo del Sprint",
+  "esperado": "Se ve el esquema del ciclo del Sprint",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-2",
+  "desc": "el esquema del flujo Kanban",
+  "esperado": "Se ve el esquema del flujo Kanban",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-3",
+  "desc": "el esquema del bucle de XP",
+  "esperado": "Se ve el esquema del bucle de XP",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-4",
+  "desc": "abrir un esquema en el Lightbox",
+  "esperado": "Se abre en pantalla completa con el mismo Lightbox de Modelos Tradicionales",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-5",
+  "desc": "cerrar el Lightbox",
+  "esperado": "El Lightbox se cierra",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-6",
+  "desc": "los esquemas en pantalla Full HD",
+  "esperado": "Los esquemas se ven nítidos y bien proporcionados",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-7",
+  "desc": "los esquemas en pantalla de alta densidad",
+  "esperado": "Los esquemas no se ven pixelados",
+  "ok": true,
+  "nota": "Vectoriales (SVG): sin pixelado a 2x"
+ },
+ {
+  "id": "US9-8",
+  "desc": "el atributo alt",
+  "esperado": "Todos tienen un texto alt que lo describe",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US9-9",
+  "desc": "los esquemas en celular",
+  "esperado": "Los esquemas se achican sin cortarse",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-1",
+  "desc": "que cargue la página Scrum",
+  "esperado": "Se ve el título, las 3 pestañas y el diagrama del Sprint",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-2",
+  "desc": "la pestaña que se ve al cargar",
+  "esperado": "Está seleccionada Roles y los otros paneles están ocultos",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-3",
+  "desc": "la pestaña Roles",
+  "esperado": "Se ven Product Owner, Scrum Master y Equipo de Desarrollo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-4",
+  "desc": "la pestaña Eventos/Ceremonias",
+  "esperado": "Se ven Sprint, Sprint Planning, Daily, Sprint Review y Sprint Retrospective",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-5",
+  "desc": "la pestaña Artefactos",
+  "esperado": "Se ven Product Backlog, Sprint Backlog e Incremento",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-6",
+  "desc": "que haya una sola pestaña seleccionada",
+  "esperado": "Siempre hay una sola pestaña activa y un solo panel visible",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-7",
+  "desc": "el evento Daily del diagrama",
+  "esperado": "Muestra duración de 15 minutos y su objetivo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-8",
+  "desc": "el evento Review del diagrama",
+  "esperado": "Muestra su duración sugerida y su objetivo",
+  "ok": true,
+  "nota": "Duración: hasta 2 horas"
+ },
+ {
+  "id": "US10-9",
+  "desc": "el evento Retro del diagrama",
+  "esperado": "Muestra su duración sugerida y su objetivo",
+  "ok": true,
+  "nota": "Duración: hasta 1 hora y 30 minutos"
+ },
+ {
+  "id": "US10-10",
+  "desc": "el Sprint de 1 semana",
+  "esperado": "Las duraciones de Review y Retro se ajustan a 1 semana",
+  "ok": true,
+  "nota": "Review hasta 1 hora, Retro hasta 45 minutos"
+ },
+ {
+  "id": "US10-11",
+  "desc": "el Sprint de 4 semanas",
+  "esperado": "Las duraciones de Review y Retro se ajustan a 4 semanas",
+  "ok": true,
+  "nota": "Review hasta 4 horas, Retro hasta 3 horas"
+ },
+ {
+  "id": "US10-12",
+  "desc": "cambiar de evento",
+  "esperado": "Se cierra la información de Daily y se ve solo la de Retro",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-13",
+  "desc": "que no haya errores",
+  "esperado": "No aparecen errores en la consola",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US10-14",
+  "desc": "la página en celular",
+  "esperado": "Las pestañas y el diagrama entran en la pantalla y se pueden usar",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-1",
+  "desc": "que cargue la página Kanban",
+  "esperado": "Se ve el título, la explicación y el tablero",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-2",
+  "desc": "las columnas del tablero",
+  "esperado": "Hay 3 columnas: Por Hacer, En Proceso y Hecho, con tarjetas informativas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-3",
+  "desc": "mover una tarjeta a En Proceso",
+  "esperado": "La tarjeta queda en En Proceso",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-4",
+  "desc": "mover una tarjeta a Hecho",
+  "esperado": "La tarjeta queda en Hecho",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-5",
+  "desc": "el límite de WIP",
+  "esperado": "No deja moverla y aparece el aviso del límite WIP",
+  "ok": true,
+  "nota": "Aviso: Límite WIP alcanzado: \"En proceso\" admit…"
+ },
+ {
+  "id": "US11-6",
+  "desc": "liberar lugar en En Proceso",
+  "esperado": "Ahora sí deja mover la tarjeta a En Proceso",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-7",
+  "desc": "soltar la tarjeta afuera",
+  "esperado": "La tarjeta vuelve a su columna",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-8",
+  "desc": "los contadores de columna",
+  "esperado": "El número de cada columna se actualiza",
+  "ok": true,
+  "nota": "Contadores 0, 2 / 2, 3"
+ },
+ {
+  "id": "US11-9",
+  "desc": "que el tablero mantenga su estado",
+  "esperado": "Las tarjetas siguen en la columna donde se dejaron",
+  "ok": true,
+  "nota": "Se mantiene incluso al recargar"
+ },
+ {
+  "id": "US11-10",
+  "desc": "el tablero en celular",
+  "esperado": "La tarjeta se mueve igual que con el mouse",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US11-11",
+  "desc": "que no haya errores",
+  "esperado": "No aparecen errores en la consola",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-1",
+  "desc": "que cargue la página Glosario",
+  "esperado": "Se ve el buscador, el índice de letras y la lista de términos",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-2",
+  "desc": "el orden alfabético",
+  "esperado": "Los términos van de la A a la Z con un separador por letra",
+  "ok": true,
+  "nota": "41 términos en 20 letras"
+ },
+ {
+  "id": "US12-3",
+  "desc": "buscar un término",
+  "esperado": "Se ve solo el término Sprint con su definición",
+  "ok": true,
+  "nota": "Sprint"
+ },
+ {
+  "id": "US12-4",
+  "desc": "la búsqueda en tiempo real",
+  "esperado": "La lista se filtra con cada letra sin apretar Enter",
+  "ok": true,
+  "nota": "Resultados: 24 → 7 → 1"
+ },
+ {
+  "id": "US12-5",
+  "desc": "mayúsculas y minúsculas",
+  "esperado": "Da el mismo resultado que en minúsculas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-6",
+  "desc": "palabras con tilde",
+  "esperado": "En los dos casos aparece Métrica",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-7",
+  "desc": "caracteres especiales",
+  "esperado": "La página no se rompe y aparece “Sin resultados”",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-8",
+  "desc": "un término que no existe",
+  "esperado": "Aparece la pantalla “Sin resultados”",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-9",
+  "desc": "borrar la búsqueda",
+  "esperado": "Vuelven a aparecer todos los términos",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-10",
+  "desc": "el índice por letras",
+  "esperado": "La página baja a los términos que empiezan con K",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US12-11",
+  "desc": "letras sin términos",
+  "esperado": "Las letras sin términos se ven atenuadas o no navegan",
+  "ok": true,
+  "nota": "6 letras atenuadas sin enlace (G J N O Y Z)"
+ },
+ {
+  "id": "US12-12",
+  "desc": "el glosario en celular",
+  "esperado": "El buscador y el índice entran en la pantalla y se pueden usar",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US14-1",
+  "desc": "que cargue la página Enlaces de Interés",
+  "esperado": "Se ven las tarjetas de enlaces",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US14-2",
+  "desc": "los íconos por tipo de recurso",
+  "esperado": "Cada enlace tiene su ícono: Web, PDF, Libro u Organización",
+  "ok": true,
+  "nota": "Tipos: Sitio web, Organización, PDF, Libro"
+ },
+ {
+  "id": "US14-3",
+  "desc": "el atributo target",
+  "esperado": "Todos tienen target=“_blank”",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US14-4",
+  "desc": "el atributo rel",
+  "esperado": "Todos tienen rel=“noopener noreferrer”",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US14-5",
+  "desc": "abrir un enlace",
+  "esperado": "Se abre en una pestaña nueva y el sitio sigue abierto en la otra",
+  "ok": true,
+  "nota": "Pestaña nueva, sin window.opener; el sitio sigue abierto"
+ },
+ {
+  "id": "US14-6",
+  "desc": "que no haya enlaces rotos",
+  "esperado": "Todos cargan y ninguno da error 404",
+  "ok": null,
+  "nota": "Pendiente: el entorno de prueba no tiene salida a internet; se verifica a mano abriendo cada enlace"
+ },
+ {
+  "id": "US14-7",
+  "desc": "las tarjetas en celular",
+  "esperado": "Las tarjetas se apilan y no hay desplazamiento horizontal",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-1",
+  "desc": "que cargue la página Ejercicios",
+  "esperado": "Se ven las tarjetas con el enunciado de cada ejercicio",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-2",
+  "desc": "que las soluciones estén ocultas",
+  "esperado": "Todas las soluciones están ocultas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-3",
+  "desc": "mostrar una solución",
+  "esperado": "Aparece la solución y el botón cambia a “Ocultar Solución”",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-4",
+  "desc": "ocultar la solución",
+  "esperado": "La solución se oculta y el botón vuelve a “Mostrar Solución”",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-5",
+  "desc": "que cada botón abra su solución",
+  "esperado": "Solo se abre la solución del ejercicio 1",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-6",
+  "desc": "recargar la página",
+  "esperado": "La solución vuelve a estar oculta",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-7",
+  "desc": "el botón con teclado",
+  "esperado": "La solución se muestra y el foco se ve resaltado",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US15-8",
+  "desc": "las tarjetas en celular",
+  "esperado": "Enunciado y solución se leen bien y no hay desplazamiento horizontal",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-1",
+  "desc": "que cargue el comparador",
+  "esperado": "Se ven las casillas de cada metodología y el espacio de la tabla",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-2",
+  "desc": "sin ninguna metodología elegida",
+  "esperado": "No hay tabla y aparece un aviso para elegir al menos dos",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-3",
+  "desc": "con una sola metodología",
+  "esperado": "No se arma la tabla y pide elegir otra",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-4",
+  "desc": "con dos metodologías",
+  "esperado": "La tabla muestra 2 columnas con enfoque, roles, flexibilidad y demás características",
+  "ok": true,
+  "nota": "Columnas Cascada, Scrum; 8 características"
+ },
+ {
+  "id": "US18-5",
+  "desc": "con tres metodologías",
+  "esperado": "La tabla muestra 3 columnas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-6",
+  "desc": "con todas las metodologías",
+  "esperado": "Aparecen todas las columnas sin romper el diseño",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-7",
+  "desc": "desmarcar una metodología",
+  "esperado": "Se borra la columna de Kanban y quedan las otras 2",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-8",
+  "desc": "desmarcar todas",
+  "esperado": "La tabla se limpia por completo y vuelve el aviso",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-9",
+  "desc": "que los datos sean correctos",
+  "esperado": "Cada característica coincide con su metodología",
+  "ok": true,
+  "nota": "48 celdas coinciden con el arreglo METODOLOGIAS"
+ },
+ {
+  "id": "US18-10",
+  "desc": "marcar y desmarcar rápido",
+  "esperado": "No aparecen columnas repetidas",
+  "ok": true,
+  "nota": "15 clics seguidos: sin columnas repetidas"
+ },
+ {
+  "id": "US18-11",
+  "desc": "que no haya errores",
+  "esperado": "No aparecen errores en la consola",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US18-12",
+  "desc": "la tabla en celular",
+  "esperado": "La tabla se desplaza hacia los costados sin romper la página",
+  "ok": true,
+  "nota": "La tabla se desplaza dentro de su caja"
+ },
+ {
+  "id": "US19-1",
+  "desc": "que cargue la encuesta",
+  "esperado": "Se ve la primera pregunta y la barra de progreso al inicio",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US19-2",
+  "desc": "la barra de progreso",
+  "esperado": "La barra avanza en cada paso hasta llegar al 100 %",
+  "ok": true,
+  "nota": "Progreso: 17 → 33 → 50 → 67 → 83 → 100 %"
+ },
+ {
+  "id": "US19-3",
+  "desc": "avanzar sin responder",
+  "esperado": "No avanza y aparece un aviso para elegir una opción",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US19-4",
+  "desc": "el botón Anterior",
+  "esperado": "Se ve la pregunta con la respuesta que se había elegido",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US19-5",
+  "desc": "la ruta hacia Cascada",
+  "esperado": "El resultado sugiere Cascada con el mayor porcentaje",
+  "ok": true,
+  "nota": "scrum 12 %, kanban 16 %, cascada 72 %"
+ },
+ {
+  "id": "US19-6",
+  "desc": "la ruta hacia Scrum",
+  "esperado": "El resultado sugiere Scrum con el mayor porcentaje",
+  "ok": true,
+  "nota": "scrum 72 %, kanban 24 %, cascada 4 %"
+ },
+ {
+  "id": "US19-7",
+  "desc": "la ruta hacia Kanban",
+  "esperado": "El resultado sugiere Kanban con el mayor porcentaje",
+  "ok": true,
+  "nota": "scrum 18 %, kanban 78 %, cascada 4 %"
+ },
+ {
+  "id": "US19-8",
+  "desc": "respuestas mezcladas",
+  "esperado": "Se muestran los porcentajes de las 3 y se destaca el mayor",
+  "ok": true,
+  "nota": "Mezcla: scrum:35,kanban:38,cascada:27; destacada kanban"
+ },
+ {
+  "id": "US19-9",
+  "desc": "la suma de porcentajes",
+  "esperado": "Los porcentajes de Scrum, Kanban y Cascada suman 100 %",
+  "ok": true,
+  "nota": "Suma 100 % (verificado en las 729 combinaciones)"
+ },
+ {
+  "id": "US19-10",
+  "desc": "repetir la misma ruta",
+  "esperado": "Da el mismo resultado las dos veces",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US19-11",
+  "desc": "volver a empezar",
+  "esperado": "Se borran las respuestas y vuelve la pregunta 1",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US19-12",
+  "desc": "que no haya errores",
+  "esperado": "No aparecen errores en la consola",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US19-13",
+  "desc": "la encuesta en celular",
+  "esperado": "Las opciones, los botones y la barra se ven y se pueden usar",
+  "ok": true,
+  "nota": ""
+ }
+]

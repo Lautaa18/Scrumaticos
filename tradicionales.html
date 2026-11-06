@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modelos tradicionales · SCrumáticos</title>
+  <meta name="description" content="Modelo en cascada, modelo en V e iterativo incremental: ventajas, desventajas y cuándo usarlos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/subnav.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="tradicionales">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Procesos de Desarrollo / Modelos Tradicionales</nav>
+        <span class="etiqueta">Procesos de desarrollo</span>
+        <h1>Modelos <span class="degradado">tradicionales</span></h1>
+        <p class="bajada">Los modelos tradicionales planifican el proyecto por fases. Compará sus ventajas y desventajas y tocá cada diagrama para verlo en pantalla completa.</p>
+      </div>
+    </section>
+
+    <nav class="sub-nav" data-subnav aria-label="Modelos de esta página">
+      <ul class="contenedor">
+        <li><a href="#cascada">Cascada</a></li>
+        <li><a href="#modelo-v">Modelo en V</a></li>
+        <li><a href="#iterativo">Iterativo e incremental</a></li>
+      </ul>
+    </nav>
+    <section class="modelo" id="cascada" aria-labelledby="t-cascada">
+      <div class="contenedor">
+        <h2 id="t-cascada">Modelo en cascada</h2>
+        <div class="modelo-grid">
+          <div>
+            <p>Propuesto por Winston Royce en 1970. Las fases se ejecutan una detrás de otra y cada una empieza cuando termina la anterior, con un documento que la cierra.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>✓ Ventajas</h3><ul><li>Simple de entender y de gestionar.</li><li>Fases y entregables bien definidos.</li><li>Documentación completa del sistema.</li><li>Fácil de estimar costos y plazos al inicio.</li></ul></div>
+              <div class="contras"><h3>✕ Desventajas</h3><ul><li>No admite cambios una vez cerrada una fase.</li><li>El cliente ve el producto recién al final.</li><li>Los errores de requisitos se descubren tarde.</li><li>Las pruebas quedan al final del proyecto.</li></ul></div>
+            </div>
+            <p class="cuando"><strong>Cuándo usarlo:</strong> requisitos claros y estables, proyectos chicos o tecnología conocida.</p>
+          </div>
+          <figure class="figura">
+              <button type="button" data-lightbox aria-label="Ampliar: Figura 1. Las seis fases del modelo en cascada en secuencia."><img src="img/diagramas/cascada.svg" alt="Diagrama del modelo en cascada: Requisitos, Diseño, Implementación, Pruebas, Despliegue y Mantenimiento, en escalera de izquierda a derecha" width="860" height="420" loading="lazy"></button>
+              <figcaption>Figura 1. Las seis fases del modelo en cascada en secuencia.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+    <section class="modelo" id="modelo-v" aria-labelledby="t-modelo-v">
+      <div class="contenedor">
+        <h2 id="t-modelo-v">Modelo en V</h2>
+        <div class="modelo-grid">
+          <div>
+            <p>Extiende la cascada relacionando cada fase de diseño (lado izquierdo) con un nivel de prueba (lado derecho). La codificación queda en el vértice.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>✓ Ventajas</h3><ul><li>Planifica las pruebas desde el inicio.</li><li>Cada etapa tiene un criterio de verificación.</li><li>Mejora la detección temprana de defectos.</li><li>Muy usado en sistemas críticos.</li></ul></div>
+              <div class="contras"><h3>✕ Desventajas</h3><ul><li>Igual de rígido que la cascada.</li><li>No produce prototipos intermedios.</li><li>Cambiar requisitos obliga a rehacer documentos y planes.</li><li>Requiere mucha documentación.</li></ul></div>
+            </div>
+            <p class="cuando"><strong>Cuándo usarlo:</strong> sistemas críticos (salud, aviación, autos) donde la verificación es obligatoria.</p>
+          </div>
+          <figure class="figura">
+              <button type="button" data-lightbox aria-label="Ampliar: Figura 2. Cada fase de diseño se corresponde con un nivel de prueba."><img src="img/diagramas/modelo-v.svg" alt="Diagrama del modelo en V: a la izquierda Requisitos, Análisis, Arquitectura y Módulos; abajo Codificación; a la derecha pruebas Unitarias, de Integración, de Sistema y de Aceptación" width="860" height="420" loading="lazy"></button>
+              <figcaption>Figura 2. Cada fase de diseño se corresponde con un nivel de prueba.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+    <section class="modelo" id="iterativo" aria-labelledby="t-iterativo">
+      <div class="contenedor">
+        <h2 id="t-iterativo">Modelo iterativo e incremental</h2>
+        <div class="modelo-grid">
+          <div>
+            <p>El sistema se construye en varias iteraciones. Cada una repite planificar, diseñar, construir y probar, y entrega un incremento que suma funcionalidad.</p>
+            <div class="pros-contras">
+              <div class="pros"><h3>✓ Ventajas</h3><ul><li>El cliente ve resultados parciales temprano.</li><li>Admite cambios entre iteraciones.</li><li>Reduce riesgos al probar en cada ciclo.</li><li>Es la base de los métodos ágiles.</li></ul></div>
+              <div class="contras"><h3>✕ Desventajas</h3><ul><li>Requiere buena planificación de las iteraciones.</li><li>La arquitectura puede degradarse si no se cuida.</li><li>Es más difícil estimar el costo total.</li><li>Necesita un cliente disponible.</li></ul></div>
+            </div>
+            <p class="cuando"><strong>Cuándo usarlo:</strong> proyectos grandes que se pueden dividir en partes o con requisitos que se van descubriendo.</p>
+          </div>
+          <figure class="figura">
+              <button type="button" data-lightbox aria-label="Ampliar: Figura 3. Tres iteraciones, cada una entrega un incremento."><img src="img/diagramas/iterativo.svg" alt="Diagrama del modelo iterativo e incremental: tres iteraciones con Planificar, Diseñar, Construir y Probar, cada una produce un incremento" width="860" height="410" loading="lazy"></button>
+              <figcaption>Figura 3. Tres iteraciones, cada una entrega un incremento.</figcaption>
+            </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

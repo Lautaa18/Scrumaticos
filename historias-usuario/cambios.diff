@@ -1,0 +1,228 @@
+--- App.orig.tsx	2026-11-06 21:37:03.060535482 +0000
++++ make/src/App.tsx	2026-11-06 21:37:03.076734495 +0000
+@@ -2101,6 +2101,57 @@
+   },
+ ]
+ 
++const storyAreaIcons: Record<string, ReactNode> = {
++  "Herramientas interactivas": (
++    <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z" />
++  ),
++  "Ciclo de vida": (
++    <>
++      <path d="M21 12a9 9 0 1 1-3-6.7" />
++      <path d="M21 4v5h-5" />
++    </>
++  ),
++  "Procesos de desarrollo": (
++    <>
++      <rect x="3" y="3" width="7" height="7" rx="1.5" />
++      <rect x="14" y="14" width="7" height="7" rx="1.5" />
++      <path d="M10 6.5h4a3 3 0 0 1 3 3V14" />
++    </>
++  ),
++  "Metodologías ágiles": (
++    <>
++      <circle cx="12" cy="12" r="8" />
++      <path d="M12 4v4M20 12h-4M12 20v-4M4 12h4" />
++    </>
++  ),
++  Scrum: (
++    <>
++      <path d="M4 12a8 8 0 0 1 14.5-4.6" />
++      <path d="M20 12a8 8 0 0 1-14.5 4.6" />
++      <path d="M18.5 3v4.4h-4.4M5.5 21v-4.4h4.4" />
++    </>
++  ),
++  Kanban: (
++    <>
++      <rect x="3" y="4" width="5" height="16" rx="1.5" />
++      <rect x="10" y="4" width="5" height="11" rx="1.5" />
++      <rect x="17" y="4" width="4" height="7" rx="1.5" />
++    </>
++  ),
++  Recursos: (
++    <>
++      <path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z" />
++      <path d="M4 21V5M8 7h7M8 11h5" />
++    </>
++  ),
++  Aprendizaje: (
++    <>
++      <path d="m2 9 10-5 10 5-10 5z" />
++      <path d="M6 11v5c3 2.5 9 2.5 12 0v-5" />
++    </>
++  ),
++}
++
+ export default function App() {
+   const [page, setPage] = useState<Page>("home")
+   const [menuOpen, setMenuOpen] = useState(false)
+@@ -2556,7 +2607,7 @@
+                   </p>
+                 </div>
+                 <div className="stories-progress">
+-                  <strong>12</strong>
++                  <strong>{userStories.length}</strong>
+                   <span>historias completadas</span>
+                 </div>
+               </div>
+@@ -2575,10 +2626,12 @@
+                         <i aria-hidden="true" /> Completada
+                       </span>
+                     </div>
+-                    <div className="story-icon story-icon-cycle">
+-                      <span>{story.id.replace("US-", "")}</span>
++                    <div className="story-area-row">
++                      <span className="story-icon" aria-hidden="true">
++                        <svg viewBox="0 0 24 24">{storyAreaIcons[story.area]}</svg>
++                      </span>
++                      <span className="story-area">{story.area}</span>
+                     </div>
+-                    <span className="story-area">{story.area}</span>
+                     <h3>{story.title}</h3>
+                     <p>{story.description}</p>
+                     <ul>
+--- index.orig.css	2026-11-06 21:37:03.062125922 +0000
++++ make/src/index.css	2026-11-06 21:37:20.295287605 +0000
+@@ -587,7 +587,7 @@
+ .story-card {
+   position: relative;
+   overflow: hidden;
+-  min-height: 430px;
++  min-height: 360px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+@@ -649,8 +649,9 @@
+   border: 1px solid rgba(61, 214, 140, 0.2);
+   border-radius: 999px;
+   color: var(--ok);
+-  background: rgba(61, 214, 140, 0.06);
+-  font-size: 0.68rem;
++  background: rgba(61, 214, 140, 0.1);
++  font-size: 0.78rem;
++  font-weight: 600;
+ }
+ 
+ .story-status i {
+@@ -661,12 +662,19 @@
+   box-shadow: 0 0 9px rgba(61, 214, 140, 0.8);
+ }
+ 
++.story-area-row {
++  display: flex;
++  align-items: center;
++  gap: 12px;
++  margin: 26px 0 4px;
++}
++
+ .story-icon {
+-  width: 54px;
+-  height: 54px;
++  width: 42px;
++  height: 42px;
++  flex: 0 0 auto;
+   display: grid;
+   place-items: center;
+-  margin: 30px 0 22px;
+   border: 1px solid rgba(168, 116, 255, 0.24);
+   border-radius: 15px;
+   color: var(--violeta);
+@@ -674,7 +682,7 @@
+ }
+ 
+ .story-icon svg {
+-  width: 35px;
++  width: 22px;
+   fill: none;
+   stroke: currentColor;
+   stroke-width: 1.8;
+@@ -688,8 +696,8 @@
+ }
+ 
+ .story-area {
+-  color: var(--violeta);
+-  font-size: 0.69rem;
++  color: var(--lila);
++  font-size: 0.74rem;
+   font-weight: 600;
+   letter-spacing: 0.13em;
+   text-transform: uppercase;
+@@ -701,8 +709,9 @@
+ }
+ 
+ .story-card > p {
++  margin: 0;
+   color: var(--texto-suave);
+-  font-size: 0.92rem;
++  font-size: 0.98rem;
+ }
+ 
+ .story-card ul {
+@@ -710,16 +719,17 @@
+   flex-wrap: wrap;
+   gap: 7px;
+   padding: 0;
+-  margin: 7px 0 24px;
++  margin: 18px 0 24px;
+   list-style: none;
+ }
+ 
+ .story-card li {
+   padding: 4px 9px;
+-  border: 1px solid rgba(168, 116, 255, 0.14);
++  border: 1px solid rgba(168, 116, 255, 0.28);
+   border-radius: 999px;
+-  color: #918ba9;
+-  font-size: 0.68rem;
++  color: var(--lila);
++  background: rgba(123, 79, 219, 0.1);
++  font-size: 0.76rem;
+ }
+ 
+ .story-link {
+@@ -729,7 +739,7 @@
+   gap: 10px;
+   margin-top: auto;
+   color: var(--lila);
+-  font-size: 0.8rem;
++  font-size: 0.9rem;
+   font-weight: 600;
+ }
+ 
+@@ -782,7 +792,7 @@
+ .next-story p {
+   margin: 0;
+   color: var(--texto-suave);
+-  font-size: 0.82rem;
++  font-size: 0.92rem;
+ }
+ 
+ .nosotros-intro {
+@@ -4566,15 +4576,21 @@
+ 
+   .story-card {
+     min-height: 0;
+-    padding: 25px;
++    padding: 20px;
++    border-radius: 20px;
++  }
++
++  .story-area-row {
++    margin-top: 16px;
+   }
+ 
+-  .story-icon {
+-    margin: 34px 0 24px;
++  .story-card h3 {
++    margin: 8px 0 8px;
++    font-size: 1.3rem;
+   }
+ 
+   .story-card ul {
+-    margin-bottom: 34px;
++    margin: 14px 0 18px;
+   }
+ 
+   .next-story {

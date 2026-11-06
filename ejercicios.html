@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios y casos prácticos · SCrumáticos</title>
+  <meta name="description" content="Ejercicios y casos prácticos con solución para reforzar el aprendizaje.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/ejercicios.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="ejercicios">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Recursos y Aprendizaje / Ejercicios</nav>
+        <span class="etiqueta">Recursos y aprendizaje</span>
+        <h1>Ejercicios y <span class="degradado">casos prácticos</span></h1>
+        <p class="bajada">Pensá tu respuesta antes de mirar la solución. Cada ejercicio tiene su pauta, oculta hasta que la pidas.</p>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-ejercicios">
+      <div class="contenedor">
+        <h2 id="t-ejercicios" class="sr-only">Ejercicios</h2>
+        <div class="grilla-2">
+          <article class="tarjeta ejercicio">
+            <span class="nivel">Ejercicio 1 · Básico</span>
+            <h3>Verificación o validación</h3>
+            <p>Un cliente pidió un formulario de registro. El equipo comprueba que el campo email rechace «juan@». Después el cliente prueba el formulario y dice que le falta el campo teléfono. ¿Qué actividad es cada una?</p>
+            <button class="btn-sec" type="button" data-solucion aria-expanded="false" aria-controls="sol-1">Mostrar solución</button>
+            <div class="solucion" id="sol-1" hidden><p>La primera es <strong>verificación</strong>: se comprueba que el producto cumpla la especificación. La segunda es <strong>validación</strong>: el cliente detecta que el producto no es el que necesita.</p></div>
+          </article>
+          <article class="tarjeta ejercicio">
+            <span class="nivel">Ejercicio 2 · Básico</span>
+            <h3>Valores límite</h3>
+            <p>El mensaje del formulario de contacto debe tener entre 10 y 500 caracteres. Diseñá los casos de prueba con la técnica de valores límite.</p>
+            <button class="btn-sec" type="button" data-solucion aria-expanded="false" aria-controls="sol-2">Mostrar solución</button>
+            <div class="solucion" id="sol-2" hidden><p>Probar con <strong>9, 10, 11</strong> caracteres (límite inferior) y con <strong>499, 500 y 501</strong> (límite superior). Deben fallar 9 y 501; el resto debe aceptarse.</p></div>
+          </article>
+          <article class="tarjeta ejercicio">
+            <span class="nivel">Ejercicio 3 · Intermedio</span>
+            <h3>Elegir un modelo</h3>
+            <p>Una empresa debe desarrollar el software de un marcapasos. Los requisitos los fija una norma y cada fase debe quedar verificada. ¿Qué modelo conviene?</p>
+            <button class="btn-sec" type="button" data-solucion aria-expanded="false" aria-controls="sol-3">Mostrar solución</button>
+            <div class="solucion" id="sol-3" hidden><p>El <strong>modelo en V</strong>: requisitos estables y la necesidad de verificar cada fase con su nivel de prueba. Es un sistema crítico, donde la trazabilidad es obligatoria.</p></div>
+          </article>
+          <article class="tarjeta ejercicio">
+            <span class="nivel">Ejercicio 4 · Intermedio</span>
+            <h3>Calcular la velocidad</h3>
+            <p>En tres Sprints un equipo terminó 21, 18 y 24 puntos. Para el próximo Sprint el Product Owner quiere comprometer 35 puntos. ¿Es razonable?</p>
+            <button class="btn-sec" type="button" data-solucion aria-expanded="false" aria-controls="sol-4">Mostrar solución</button>
+            <div class="solucion" id="sol-4" hidden><p>La velocidad promedio es <strong>(21 + 18 + 24) / 3 = 21 puntos</strong>. Comprometer 35 es 67 % más: no es razonable. El Scrum Master debería proponer unos 21 puntos y priorizar el resto.</p></div>
+          </article>
+          <article class="tarjeta ejercicio">
+            <span class="nivel">Ejercicio 5 · Avanzado</span>
+            <h3>Caso práctico: tablero Kanban</h3>
+            <p>En un equipo de soporte hay 9 tarjetas en «En proceso» y los tickets tardan cada vez más en resolverse. ¿Qué harías?</p>
+            <button class="btn-sec" type="button" data-solucion aria-expanded="false" aria-controls="sol-5">Mostrar solución</button>
+            <div class="solucion" id="sol-5" hidden><p>Fijar un <strong>límite WIP</strong> (por ejemplo, 3), dejar de empezar tareas nuevas hasta terminar las actuales, hacer visibles los bloqueos y medir el <strong>lead time</strong> para comprobar la mejora.</p></div>
+          </article>
+          <article class="tarjeta ejercicio">
+            <span class="nivel">Ejercicio 6 · Avanzado</span>
+            <h3>Caso práctico: Daily Scrum</h3>
+            <p>En la Daily, el tester dice que lleva dos días esperando que el programador suba una corrección. ¿Qué rol interviene y qué hace?</p>
+            <button class="btn-sec" type="button" data-solucion aria-expanded="false" aria-controls="sol-6">Mostrar solución</button>
+            <div class="solucion" id="sol-6" hidden><p>Es un <strong>impedimento</strong>. El <strong>Scrum Master</strong> lo registra y coordina, después de la Daily, que el programador priorice la corrección; si se repite, se trata en la Retrospectiva.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

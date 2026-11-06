@@ -6,19 +6,20 @@
    ========================================================= */
 const NAV = [
   { label: "Inicio", href: "index.html", id: "inicio" },
+  { label: "Historias de Usuario", href: "index.html#historias", id: "inicio", ancla: true },
   {
     label: "Gestión de la Calidad del Software",
     hijos: [
       { label: "Fundamentos", href: "fundamentos.html", id: "fundamentos" },
-      { label: "Técnicas de QA", href: null, id: "tecnicas" },
-      { label: "Herramientas", href: null, id: "herramientas" },
+      { label: "Técnicas de QA", href: "tecnicas.html", id: "tecnicas" },
+      { label: "Herramientas", href: "herramientas.html", id: "herramientas" },
     ],
   },
   {
     label: "Procesos de Desarrollo",
     hijos: [
-      { label: "SDLC", href: null, id: "sdlc" },
-      { label: "Modelos Tradicionales", href: null, id: "tradicionales" },
+      { label: "SDLC", href: "sdlc.html", id: "sdlc" },
+      { label: "Modelos Tradicionales", href: "tradicionales.html", id: "tradicionales" },
     ],
   },
   {
@@ -32,19 +33,26 @@ const NAV = [
     ],
   },
   {
+    label: "Metodologías en Detalle",
+    hijos: [
+      { label: "Scrum en detalle", href: "scrum.html", id: "scrum" },
+      { label: "Kanban en detalle", href: "kanban.html", id: "kanban" },
+    ],
+  },
+  {
     label: "Recursos y Aprendizaje",
     hijos: [
-      { label: "Glosario", href: null, id: "glosario" },
+      { label: "Glosario", href: "glosario.html", id: "glosario" },
       { label: "Preguntas Frecuentes", href: "faq.html", id: "faq" },
-      { label: "Enlaces de Interés", href: null, id: "enlaces" },
-      { label: "Ejercicios", href: null, id: "ejercicios" },
+      { label: "Enlaces de Interés", href: "enlaces.html", id: "enlaces" },
+      { label: "Ejercicios", href: "ejercicios.html", id: "ejercicios" },
     ],
   },
   {
     label: "Herramientas JS",
     hijos: [
-      { label: "Comparador", href: null, id: "comparador" },
-      { label: "Encuesta", href: null, id: "encuesta" },
+      { label: "Comparador", href: "comparador.html", id: "comparador" },
+      { label: "Encuesta", href: "encuesta.html", id: "encuesta" },
     ],
   },
   { label: "Sobre Nosotros", href: "index.html#nosotros", id: "inicio", ancla: true },
@@ -110,7 +118,7 @@ const NAV = [
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="fundamentos.html">Gestión de calidad</a></li>
-            <li><a href="agiles.html">Procesos de desarrollo</a></li>
+            <li><a href="sdlc.html">Procesos de desarrollo</a></li>
             <li><a href="agiles.html">Metodologías ágiles</a></li>
           </ul>
         </nav>

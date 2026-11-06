@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/layout.js" defer></script>
   <script src="js/equipo.js" defer></script>
+  <script src="js/historias.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body data-page="inicio">
@@ -27,8 +28,8 @@
             <p>Fundamentos, técnicas de aseguramiento y herramientas para evaluar software de calidad.</p>
             <div class="tags">
               <a class="tag" href="fundamentos.html">Fundamentos</a>
-              <span class="tag proximamente" title="Próximamente">Técnicas de QA</span>
-              <span class="tag proximamente" title="Próximamente">Herramientas</span>
+              <a class="tag" href="tecnicas.html">Técnicas de QA</a>
+              <a class="tag" href="herramientas.html">Herramientas</a>
             </div>
           </article>
 
@@ -36,8 +37,8 @@
             <h2>Procesos de Desarrollo</h2>
             <p>SDLC, modelos tradicionales y metodologías ágiles como Scrum, Kanban y XP.</p>
             <div class="tags">
-              <span class="tag proximamente" title="Próximamente">SDLC</span>
-              <span class="tag proximamente" title="Próximamente">Modelos Tradicionales</span>
+              <a class="tag" href="sdlc.html">SDLC</a>
+              <a class="tag" href="tradicionales.html">Modelos Tradicionales</a>
             </div>
           </article>
 
@@ -49,6 +50,8 @@
               <a class="tag" href="agiles.html#scrum">Scrum</a>
               <a class="tag" href="agiles.html#kanban">Kanban</a>
               <a class="tag" href="agiles.html#xp">XP</a>
+              <a class="tag" href="scrum.html">Scrum en detalle</a>
+              <a class="tag" href="kanban.html">Kanban en detalle</a>
             </div>
           </article>
 
@@ -56,9 +59,10 @@
             <h2>Recursos y Aprendizaje</h2>
             <p>Glosario, FAQ, enlaces de interés y ejercicios prácticos para reforzar lo aprendido.</p>
             <div class="tags">
-              <span class="tag proximamente" title="Próximamente">Glosario</span>
+              <a class="tag" href="glosario.html">Glosario</a>
               <a class="tag" href="faq.html">FAQ</a>
-              <span class="tag proximamente" title="Próximamente">Ejercicios</span>
+              <a class="tag" href="enlaces.html">Enlaces</a>
+              <a class="tag" href="ejercicios.html">Ejercicios</a>
             </div>
           </article>
 
@@ -66,8 +70,8 @@
             <h2>Herramientas Interactivas</h2>
             <p>Comparador de metodologías y encuesta de preferencias para aplicar los conceptos.</p>
             <div class="tags">
-              <span class="tag proximamente" title="Próximamente">Comparador</span>
-              <span class="tag proximamente" title="Próximamente">Encuesta</span>
+              <a class="tag" href="comparador.html">Comparador</a>
+              <a class="tag" href="encuesta.html">Encuesta</a>
             </div>
           </article>
 
@@ -98,6 +102,32 @@
           <path d="M0,220 C300,160 600,300 900,330 C1150,355 1300,200 1440,60 L1440,600 L0,600 Z" fill="url(#onda1)"/>
           <path d="M0,480 C260,300 560,260 860,330 C1100,385 1300,360 1440,280 L1440,600 L0,600 Z" fill="url(#onda2)"/>
         </svg>
+      </div>
+    </section>
+    <section class="bloque historias" id="historias" aria-labelledby="t-historias">
+      <div class="contenedor">
+        <div class="historias-encabezado">
+          <div>
+            <span class="etiqueta">Trabajo realizado</span>
+            <h2 id="t-historias">Historias de <span class="degradado">usuario</span></h2>
+            <p class="bajada">Un registro visual de las funcionalidades que vamos construyendo. Cada historia reúne su objetivo, sus requerimientos y el resultado implementado.</p>
+          </div>
+          <div class="historias-progreso">
+            <strong data-historias-total>0</strong>
+            <span data-historias-de>historias completadas</span>
+          </div>
+        </div>
+
+        <!-- Las tarjetas las genera js/historias.js -->
+        <ul class="historias-grilla" data-historias></ul>
+
+        <div class="historias-proxima">
+          <span>Próxima entrega</span>
+          <div>
+            <i aria-hidden="true">+</i>
+            <p>Las próximas historias de usuario aparecerán en esta sección a medida que las vayamos desarrollando.</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="bloque" id="nosotros" aria-labelledby="t-nosotros">

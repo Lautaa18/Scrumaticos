@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanban en detalle · SCrumáticos</title>
+  <meta name="description" content="Kanban como herramienta de gestión de procesos, con un tablero interactivo y límite WIP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/kanban.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="kanban">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Metodologías en Detalle / Kanban</nav>
+        <span class="etiqueta">Metodologías en detalle</span>
+        <h1>Kanban en <span class="degradado">detalle</span></h1>
+        <p class="bajada">Kanban es un método para gestionar el flujo de trabajo: se visualizan las tareas en un tablero, se limita el trabajo en curso (WIP) y se mejora el proceso de forma continua.</p>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-principios">
+      <div class="contenedor">
+        <h2 id="t-principios">Cómo funciona</h2>
+        <div class="fichas">
+          <div class="ficha"><h4>Visualizar el trabajo</h4><p>Cada tarea es una tarjeta y cada columna, un estado del proceso.</p></div>
+          <div class="ficha"><h4>Limitar el WIP</h4><p>Cada columna admite un máximo de tarjetas. Si está llena, primero se termina algo.</p></div>
+          <div class="ficha"><h4>Gestionar el flujo</h4><p>Se mide cuánto tarda una tarea (lead time) y cuántas se terminan (throughput).</p></div>
+          <div class="ficha"><h4>Mejorar continuamente</h4><p>No hay iteraciones fijas: el proceso se ajusta a medida que se observan cuellos de botella.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-tablero">
+      <div class="contenedor">
+        <h2 id="t-tablero">Probá el tablero</h2>
+        <p class="bajada">Arrastrá las tarjetas entre columnas, con el mouse o con el dedo, o usá las flechas de cada tarjeta. La columna <strong>En proceso</strong> tiene un límite WIP de 2.</p>
+        <div class="tablero" data-kanban>
+          <section class="columna" data-col="hacer" aria-labelledby="col-hacer">
+            <h3 id="col-hacer">Por hacer <output></output></h3>
+            <ul class="lista-k" data-lista style="list-style:none;margin:0;padding:0"></ul>
+          </section>
+          <section class="columna" data-col="proceso" aria-labelledby="col-proceso">
+            <h3 id="col-proceso">En proceso <output></output></h3>
+            <ul class="lista-k" data-lista style="list-style:none;margin:0;padding:0"></ul>
+          </section>
+          <section class="columna" data-col="hecho" aria-labelledby="col-hecho">
+            <h3 id="col-hecho">Hecho <output></output></h3>
+            <ul class="lista-k" data-lista style="list-style:none;margin:0;padding:0"></ul>
+          </section>
+        </div>
+        <div class="k-pie">
+          <p class="aviso error" data-aviso-wip role="alert" hidden></p>
+          <button class="btn-sec" type="button" data-kanban-reiniciar>Reiniciar tablero</button>
+        </div>
+        <p class="nota">El tablero se guarda en tu navegador: si recargás la página, las tarjetas quedan donde las dejaste.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

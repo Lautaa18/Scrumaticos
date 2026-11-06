@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Herramientas de calidad · SCrumáticos</title>
+  <meta name="description" content="Herramientas de gestión de pruebas, seguimiento de defectos y análisis de calidad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/filtros.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="herramientas">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Gestión de la Calidad / Herramientas</nav>
+        <span class="etiqueta">Gestión de la calidad del software</span>
+        <h1>Herramientas de <span class="degradado">calidad</span></h1>
+        <p class="bajada">Una introducción a las herramientas que usan los equipos para seguir defectos, revisar el código y gestionar las pruebas. Filtrá por categoría.</p>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-catalogo">
+      <div class="contenedor">
+        <h2 id="t-catalogo">Catálogo</h2>
+        <div class="filtros" role="group" aria-label="Filtrar por categoría">
+          <button class="btn-sec" type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+          <button class="btn-sec" type="button" data-filtro="bug" aria-pressed="false">Bug Trackers</button>
+          <button class="btn-sec" type="button" data-filtro="lint" aria-pressed="false">Linters</button>
+          <button class="btn-sec" type="button" data-filtro="test" aria-pressed="false">Test Management</button>
+          <button class="btn-sec" type="button" data-filtro="analisis" aria-pressed="false">Análisis de calidad</button>
+        </div>
+        <p class="contador-filtro" data-contador-filtro aria-live="polite"></p>
+        <div class="grilla-2">
+          <article class="tarjeta herramienta" data-categoria="bug">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 8a4 4 0 0 1 8 0v8a4 4 0 0 1-8 0z"/><path d="M4 12h4M16 12h4M5 7l3 2M19 7l-3 2M5 17l3-2M19 17l-3-2"/></svg></span>
+            <div><span class="cat">Bug Trackers</span><h3>Jira</h3><p>Gestiona incidencias y tareas con flujos configurables; muy usado en equipos Scrum.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="bug">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 8a4 4 0 0 1 8 0v8a4 4 0 0 1-8 0z"/><path d="M4 12h4M16 12h4M5 7l3 2M19 7l-3 2M5 17l3-2M19 17l-3-2"/></svg></span>
+            <div><span class="cat">Bug Trackers</span><h3>GitHub Issues</h3><p>Registro de defectos integrado al repositorio, con etiquetas y vínculo a commits.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="bug">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 8a4 4 0 0 1 8 0v8a4 4 0 0 1-8 0z"/><path d="M4 12h4M16 12h4M5 7l3 2M19 7l-3 2M5 17l3-2M19 17l-3-2"/></svg></span>
+            <div><span class="cat">Bug Trackers</span><h3>Bugzilla</h3><p>Herramienta libre de seguimiento de defectos creada por Mozilla.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="lint">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/><path d="m15 17 2 2 4-4"/></svg></span>
+            <div><span class="cat">Linters</span><h3>ESLint</h3><p>Analiza JavaScript y avisa errores y malas prácticas antes de ejecutar el código.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="lint">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/><path d="m15 17 2 2 4-4"/></svg></span>
+            <div><span class="cat">Linters</span><h3>Stylelint</h3><p>Revisa hojas de estilo CSS: propiedades inválidas, duplicados y orden.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="lint">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7"/><path d="m15 17 2 2 4-4"/></svg></span>
+            <div><span class="cat">Linters</span><h3>Pylint</h3><p>Linter para Python que mide estilo y posibles errores.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="test">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+            <div><span class="cat">Test Management</span><h3>TestRail</h3><p>Organiza casos de prueba, planes y ejecuciones con reportes de avance.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="test">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+            <div><span class="cat">Test Management</span><h3>Zephyr</h3><p>Gestión de pruebas integrada a Jira para trazar casos con historias.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="test">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+            <div><span class="cat">Test Management</span><h3>Testlink</h3><p>Herramienta libre para redactar casos de prueba y registrar resultados.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="analisis">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <div><span class="cat">Análisis de calidad</span><h3>SonarQube</h3><p>Mide calidad del código: bugs, vulnerabilidades, duplicación y cobertura.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="analisis">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <div><span class="cat">Análisis de calidad</span><h3>Lighthouse</h3><p>Audita páginas web: rendimiento, accesibilidad y buenas prácticas.</p></div>
+          </article>
+          <article class="tarjeta herramienta" data-categoria="analisis">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <div><span class="cat">Análisis de calidad</span><h3>Playwright</h3><p>Automatiza pruebas en navegadores reales; la usamos para la regresión del sitio.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

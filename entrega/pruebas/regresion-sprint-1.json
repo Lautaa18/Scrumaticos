@@ -1,0 +1,194 @@
+[
+ {
+  "id": "US1-1",
+  "desc": "Menú se abre",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-3",
+  "desc": "Menú se cierra con Esc y el foco vuelve",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-4",
+  "desc": "Menú se cierra con click afuera",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-6",
+  "desc": "Un solo submenú abierto a la vez",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-13",
+  "desc": "Ítems sin página se ven como Próximamente sin enlace",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-21",
+  "desc": "Portada con título y 6 tarjetas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-22",
+  "desc": "No hay enlaces internos rotos",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-23",
+  "desc": "Sin scroll horizontal a 1280px",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-24",
+  "desc": "Sin scroll horizontal a 768px",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US1-20",
+  "desc": "Sin scroll horizontal a 375px",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US2-1",
+  "desc": "Pestaña inicial ISO 9126 y un panel visible",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US2-5",
+  "desc": "Siempre una sola pestaña activa",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US2-6",
+  "desc": "Flecha derecha cicla pestañas",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US2-8",
+  "desc": "Teclas Inicio/Fin",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US2-16",
+  "desc": "Un solo h1 en Fundamentos",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US8-3",
+  "desc": "12 principios del Manifiesto",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US8-10",
+  "desc": "Índice lleva a Scrum sin quedar tapado",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US8-12",
+  "desc": "Scrollspy marca Kanban",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US8-17",
+  "desc": "Un solo h1 en Metodologías ágiles",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US13-2",
+  "desc": "Todas las preguntas cerradas al cargar",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US13-3",
+  "desc": "Abrir una pregunta",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US13-5",
+  "desc": "Grupo \"una por vez\" cierra la anterior",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US13-8",
+  "desc": "Acordeón con teclado (Enter)",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US13-12",
+  "desc": "Un solo h1 en FAQ",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US16-2",
+  "desc": "4 perfiles del equipo",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US16-4",
+  "desc": "Hover agrega la luz",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US17-2",
+  "desc": "Enviar vacío muestra 4 errores",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US17-4",
+  "desc": "Email inválido",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US17-9",
+  "desc": "Límite de 500 caracteres",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US17-11",
+  "desc": "Envío correcto muestra agradecimiento",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "US17-13",
+  "desc": "Cada campo tiene etiqueta vinculada",
+  "ok": true,
+  "nota": ""
+ },
+ {
+  "id": "GEN",
+  "desc": "Sin errores en la consola",
+  "ok": true,
+  "nota": ""
+ }
+]
