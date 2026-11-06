@@ -74,9 +74,14 @@ function calcularResultado(respuestas) {
     </fieldset>`;
     aviso.hidden = true;
     btnAnt.hidden = paso === 0;
-    btnSig.hidden = false;
-    btnSig.textContent = paso === PREGUNTAS.length - 1 ? "Ver resultado" : "Siguiente";
-    cuerpo.querySelectorAll("input").forEach((inp) => inp.addEventListener("change", () => (aviso.hidden = true)));
+    const ultima = paso === PREGUNTAS.length - 1;
+    btnSig.hidden = ultima;
+    btnSig.textContent = "Siguiente";
+    cuerpo.querySelectorAll("input").forEach((inp) => inp.addEventListener("change", () => {
+      aviso.hidden = true;
+      // En la última pregunta el resultado aparece al elegir la opción, sin botón extra
+      if (ultima) { respuestas[paso] = Number(inp.value); resultado(); }
+    }));
   }
   function resultado() {
     progreso(100);

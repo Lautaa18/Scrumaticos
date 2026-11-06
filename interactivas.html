@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Herramientas Interactivas · SCrumáticos</title>
+  <meta name="description" content="Comparador de metodologías y encuesta de preferencias para aplicar los conceptos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/layout.js" defer></script>
+  <script src="js/comparador.js" defer></script>
+  <script src="js/encuesta.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="interactivas">
+  <main id="contenido">
+    <section class="page-head">
+      <div class="contenedor">
+        <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> / Herramientas Interactivas</nav>
+        <h1>Herramientas <span class="degradado">interactivas</span></h1>
+        <p class="bajada">Comparador de metodologías y encuesta de preferencias para aplicar los conceptos.</p>
+        <nav class="partes-nav" aria-label="Secciones de esta página"><a href="#comparador">Comparador</a><a href="#encuesta">Encuesta</a></nav>
+      </div>
+    </section>
+
+    <section class="page-head parte-head" id="comparador" aria-labelledby="h-comparador">
+      <div class="contenedor">
+        <span class="etiqueta">Herramientas interactivas</span>
+        <h2 id="h-comparador" class="parte-titulo">Comparador de <span class="degradado">metodologías</span></h2>
+        <p class="bajada">Elegí dos o más metodologías y mirá sus diferencias en enfoque, entregas, roles, flexibilidad y más.</p>
+      </div>
+    </section>
+    <div class="parte-cuerpo">
+    
+
+    <section class="bloque" aria-labelledby="t-comparar">
+      <div class="contenedor">
+        <h2 id="t-comparar" class="sr-only">Comparar</h2>
+        <form data-comparador>
+          <fieldset class="selector"><legend>Metodologías a comparar</legend></fieldset>
+          <p style="margin-top:14px"><button class="btn-sec" type="reset">Limpiar selección</button></p>
+        </form>
+        <p class="aviso" data-aviso-comparador aria-live="polite"></p>
+        <div data-tabla-comparador></div>
+      </div>
+    </section>
+  </div>
+
+    <section class="page-head parte-head" id="encuesta" aria-labelledby="h-encuesta">
+      <div class="contenedor">
+        <span class="etiqueta">Herramientas interactivas</span>
+        <h2 id="h-encuesta" class="parte-titulo">¿Qué metodología <span class="degradado">te conviene?</span></h2>
+        <p class="bajada">Respondé seis preguntas sobre tu proyecto. Al final te mostramos qué tanto coincide con Scrum, Kanban y Cascada.</p>
+      </div>
+    </section>
+    <div class="parte-cuerpo">
+    
+
+    <section class="bloque" aria-labelledby="t-encuesta">
+      <div class="contenedor">
+        <h2 id="t-encuesta" class="sr-only">Encuesta</h2>
+        <div class="wizard" data-encuesta>
+          <div class="progreso" role="progressbar" aria-label="Progreso de la encuesta" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
+          <p class="paso-txt" data-paso></p>
+          <div data-pregunta></div>
+          <p class="aviso error" data-aviso-encuesta role="alert" hidden></p>
+          <div class="wizard-botones">
+            <button class="btn-sec" type="button" data-anterior>← Anterior</button>
+            <button class="btn" type="button" data-siguiente>Siguiente</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  </main>
+</body>
+</html>

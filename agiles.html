@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/layout.js" defer></script>
   <script src="js/modal.js" defer></script>
+  <script src="js/scrum.js" defer></script>
+  <script src="js/kanban.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body data-page="agiles">
@@ -51,6 +53,8 @@
               <li><a href="#xp-practicas">Prácticas</a></li>
             </ol>
           </li>
+          <li><a href="#scrum-detalle">Scrum en detalle</a></li>
+          <li><a href="#kanban-detalle">Kanban en detalle</a></li>
           <li><a href="#comparativa">Ágil vs. tradicional</a></li>
         </ol>
       </nav>
@@ -205,6 +209,121 @@
         </section>
 
         <!-- ===== COMPARATIVA ===== -->
+        <section id="scrum-detalle" class="metodo" aria-labelledby="t-scrum-detalle">
+          <span class="etiqueta">Metodologías en detalle</span>
+          <h2 id="t-scrum-detalle">Scrum en <span class="degradado">detalle</span></h2>
+          <p class="bajada">Scrum es un marco de trabajo para crear productos complejos en ciclos cortos llamados Sprints. Explorá sus roles, eventos y artefactos, y probá cómo cambian los eventos según la duración del Sprint.</p>
+          
+    
+
+    <section class="bloque" aria-labelledby="t-marco">
+      <div class="sin-contenedor">
+        <h2 id="t-marco">El marco de trabajo</h2>
+        <div class="tabs-lista" role="tablist" aria-label="Partes de Scrum" data-tabs>
+          <button class="tab" role="tab" id="tab-roles" aria-controls="panel-roles" aria-selected="true" tabindex="0">Roles</button>
+          <button class="tab" role="tab" id="tab-eventos" aria-controls="panel-eventos" aria-selected="false" tabindex="-1">Eventos / Ceremonias</button>
+          <button class="tab" role="tab" id="tab-artefactos" aria-controls="panel-artefactos" aria-selected="false" tabindex="-1">Artefactos</button>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-roles" aria-labelledby="tab-roles">
+          <div class="fichas">
+            <div class="ficha"><h4>Product Owner</h4><p>Maximiza el valor del producto. Ordena el Product Backlog, define el Objetivo del Producto y decide qué se construye primero. En nuestro proyecto es el docente.</p></div>
+            <div class="ficha"><h4>Scrum Master</h4><p>Ayuda al equipo a aplicar Scrum, facilita los eventos y elimina impedimentos. No es un jefe: es un líder que sirve al equipo.</p></div>
+            <div class="ficha"><h4>Equipo de Desarrollo (Developers)</h4><p>Personas que crean el incremento en cada Sprint: programan, diseñan y prueban. Se autoorganizan y son responsables de la calidad.</p></div>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-eventos" aria-labelledby="tab-eventos" hidden>
+          <div class="fichas">
+            <div class="ficha"><h4>Sprint</h4><p>Contenedor de todos los eventos. Dura entre 1 y 4 semanas y produce un incremento terminado.</p><span class="dato">1 a 4 semanas</span></div>
+            <div class="ficha"><h4>Sprint Planning</h4><p>Se decide qué se hará en el Sprint y cómo, y se define el Objetivo del Sprint.</p><span class="dato">Hasta 8 h por Sprint de 1 mes</span></div>
+            <div class="ficha"><h4>Daily Scrum</h4><p>Reunión diaria del equipo para revisar el avance y adaptar el plan.</p><span class="dato">15 minutos</span></div>
+            <div class="ficha"><h4>Sprint Review</h4><p>Se muestra el incremento a los interesados y se adapta el Product Backlog.</p><span class="dato">Hasta 4 h por Sprint de 1 mes</span></div>
+            <div class="ficha"><h4>Sprint Retrospective</h4><p>El equipo analiza cómo trabajó y acuerda mejoras.</p><span class="dato">Hasta 3 h por Sprint de 1 mes</span></div>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-artefactos" aria-labelledby="tab-artefactos" hidden>
+          <div class="fichas">
+            <div class="ficha"><h4>Product Backlog</h4><p>Lista ordenada de todo lo que necesita el producto. Es la única fuente de trabajo del equipo.</p><span class="dato">Compromiso: Objetivo del Producto</span></div>
+            <div class="ficha"><h4>Sprint Backlog</h4><p>Historias elegidas para el Sprint más el plan para terminarlas. Se ve en el tablero (To Do, In Progress, QA, Done).</p><span class="dato">Compromiso: Objetivo del Sprint</span></div>
+            <div class="ficha"><h4>Incremento</h4><p>Resultado utilizable del Sprint que se suma a los anteriores.</p><span class="dato">Compromiso: Definition of Done</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-lab">
+      <div class="sin-contenedor">
+        <h2 id="t-lab">Diagrama interactivo del Sprint</h2>
+        <p class="bajada">Elegí la duración del Sprint y tocá un evento para ver cuánto debería durar y para qué sirve.</p>
+        <div class="sprint-lab" data-sprint-lab>
+          <div class="semanas" role="group" aria-label="Duración del Sprint">
+            <span>Duración del Sprint:</span>
+            <button class="btn-sec" type="button" data-semanas="1" aria-pressed="false">1 semana</button>
+            <button class="btn-sec" type="button" data-semanas="2" aria-pressed="true">2 semanas</button>
+            <button class="btn-sec" type="button" data-semanas="3" aria-pressed="false">3 semanas</button>
+            <button class="btn-sec" type="button" data-semanas="4" aria-pressed="false">4 semanas</button>
+          </div>
+          <div class="cronograma" data-cronograma aria-hidden="true"></div>
+          <div class="eventos" role="group" aria-label="Eventos del Sprint">
+            <button class="btn-sec" type="button" data-evento="planning" aria-pressed="false">Sprint Planning</button>
+            <button class="btn-sec" type="button" data-evento="daily" aria-pressed="false">Daily</button>
+            <button class="btn-sec" type="button" data-evento="review" aria-pressed="false">Review</button>
+            <button class="btn-sec" type="button" data-evento="retro" aria-pressed="false">Retro</button>
+          </div>
+          <div class="evento-info" data-evento-info aria-live="polite" hidden></div>
+        </div>
+        <p class="nota">Duraciones máximas según la Guía Scrum 2020; para Sprints más cortos se reducen en proporción.</p>
+      </div>
+    </section>
+  
+        </section>
+
+        <section id="kanban-detalle" class="metodo" aria-labelledby="t-kanban-detalle">
+          <span class="etiqueta">Metodologías en detalle</span>
+          <h2 id="t-kanban-detalle">Kanban en <span class="degradado">detalle</span></h2>
+          <p class="bajada">Kanban es un método para gestionar el flujo de trabajo: se visualizan las tareas en un tablero, se limita el trabajo en curso (WIP) y se mejora el proceso de forma continua.</p>
+          
+    
+
+    <section class="bloque" aria-labelledby="t-principios">
+      <div class="sin-contenedor">
+        <h2 id="t-principios">Cómo funciona</h2>
+        <div class="fichas">
+          <div class="ficha"><h4>Visualizar el trabajo</h4><p>Cada tarea es una tarjeta y cada columna, un estado del proceso.</p></div>
+          <div class="ficha"><h4>Limitar el WIP</h4><p>Cada columna admite un máximo de tarjetas. Si está llena, primero se termina algo.</p></div>
+          <div class="ficha"><h4>Gestionar el flujo</h4><p>Se mide cuánto tarda una tarea (lead time) y cuántas se terminan (throughput).</p></div>
+          <div class="ficha"><h4>Mejorar continuamente</h4><p>No hay iteraciones fijas: el proceso se ajusta a medida que se observan cuellos de botella.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque" aria-labelledby="t-tablero">
+      <div class="sin-contenedor">
+        <h2 id="t-tablero">Probá el tablero</h2>
+        <p class="bajada">Arrastrá las tarjetas entre columnas, con el mouse o con el dedo, o usá las flechas de cada tarjeta. La columna <strong>En proceso</strong> tiene un límite WIP de 2.</p>
+        <div class="tablero" data-kanban>
+          <section class="columna" data-col="hacer" aria-labelledby="col-hacer">
+            <h3 id="col-hacer">Por hacer <output></output></h3>
+            <ul class="lista-k" data-lista style="list-style:none;margin:0;padding:0"></ul>
+          </section>
+          <section class="columna" data-col="proceso" aria-labelledby="col-proceso">
+            <h3 id="col-proceso">En proceso <output></output></h3>
+            <ul class="lista-k" data-lista style="list-style:none;margin:0;padding:0"></ul>
+          </section>
+          <section class="columna" data-col="hecho" aria-labelledby="col-hecho">
+            <h3 id="col-hecho">Hecho <output></output></h3>
+            <ul class="lista-k" data-lista style="list-style:none;margin:0;padding:0"></ul>
+          </section>
+        </div>
+        <div class="k-pie">
+          <p class="aviso error" data-aviso-wip role="alert" hidden></p>
+          <button class="btn-sec" type="button" data-kanban-reiniciar>Reiniciar tablero</button>
+        </div>
+        <p class="nota">El tablero se guarda en tu navegador: si recargás la página, las tarjetas quedan donde las dejaste.</p>
+      </div>
+    </section>
+  
+        </section>
+
         <section id="comparativa" class="metodo" aria-labelledby="t-comp">
           <h2 id="t-comp">Ágil vs. tradicional</h2>
           <div class="tabla-wrap">

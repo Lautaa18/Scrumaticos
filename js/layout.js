@@ -10,16 +10,16 @@ const NAV = [
   {
     label: "Gestión de la Calidad del Software",
     hijos: [
-      { label: "Fundamentos", href: "fundamentos.html", id: "fundamentos" },
-      { label: "Técnicas de QA", href: "tecnicas.html", id: "tecnicas" },
-      { label: "Herramientas", href: "herramientas.html", id: "herramientas" },
+      { label: "Fundamentos", href: "calidad.html#fundamentos", id: "calidad", ancla: true },
+      { label: "Técnicas de QA", href: "calidad.html#tecnicas", id: "calidad", ancla: true },
+      { label: "Herramientas", href: "calidad.html#herramientas", id: "calidad", ancla: true },
     ],
   },
   {
     label: "Procesos de Desarrollo",
     hijos: [
-      { label: "SDLC", href: "sdlc.html", id: "sdlc" },
-      { label: "Modelos Tradicionales", href: "tradicionales.html", id: "tradicionales" },
+      { label: "SDLC", href: "procesos.html#sdlc", id: "procesos", ancla: true },
+      { label: "Modelos Tradicionales", href: "procesos.html#tradicionales", id: "procesos", ancla: true },
     ],
   },
   {
@@ -35,24 +35,24 @@ const NAV = [
   {
     label: "Metodologías en Detalle",
     hijos: [
-      { label: "Scrum en detalle", href: "scrum.html", id: "scrum" },
-      { label: "Kanban en detalle", href: "kanban.html", id: "kanban" },
+      { label: "Scrum en detalle", href: "agiles.html#scrum-detalle", id: "agiles", ancla: true },
+      { label: "Kanban en detalle", href: "agiles.html#kanban-detalle", id: "agiles", ancla: true },
     ],
   },
   {
     label: "Recursos y Aprendizaje",
     hijos: [
-      { label: "Glosario", href: "glosario.html", id: "glosario" },
-      { label: "Preguntas Frecuentes", href: "faq.html", id: "faq" },
-      { label: "Enlaces de Interés", href: "enlaces.html", id: "enlaces" },
-      { label: "Ejercicios", href: "ejercicios.html", id: "ejercicios" },
+      { label: "Glosario", href: "recursos.html#glosario", id: "recursos", ancla: true },
+      { label: "Preguntas Frecuentes", href: "recursos.html#faq", id: "recursos", ancla: true },
+      { label: "Enlaces de Interés", href: "recursos.html#enlaces", id: "recursos", ancla: true },
+      { label: "Ejercicios", href: "recursos.html#ejercicios", id: "recursos", ancla: true },
     ],
   },
   {
     label: "Herramientas JS",
     hijos: [
-      { label: "Comparador", href: "comparador.html", id: "comparador" },
-      { label: "Encuesta", href: "encuesta.html", id: "encuesta" },
+      { label: "Comparador", href: "interactivas.html#comparador", id: "interactivas", ancla: true },
+      { label: "Encuesta", href: "interactivas.html#encuesta", id: "interactivas", ancla: true },
     ],
   },
   { label: "Sobre Nosotros", href: "index.html#nosotros", id: "inicio", ancla: true },
@@ -117,8 +117,8 @@ const NAV = [
           <h2>Contenido</h2>
           <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="fundamentos.html">Gestión de calidad</a></li>
-            <li><a href="sdlc.html">Procesos de desarrollo</a></li>
+            <li><a href="calidad.html#fundamentos">Gestión de calidad</a></li>
+            <li><a href="procesos.html#sdlc">Procesos de desarrollo</a></li>
             <li><a href="agiles.html">Metodologías ágiles</a></li>
           </ul>
         </nav>
